@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS Document */
+/*h1{
+	color: red; 
+}*/
+
+body{
+	position: absolute;
+	width: 100%;
+	height:100%;
+	overflow: hidden;
+}
+.center-text{
+	text-align: center;
+}
+#loading-content{
+	/*border: solid white 1px;*/
+	width:30em;
+	height:15em;
+	margin:0 auto;
+	margin-top: 12em;
+}
+#loading-motto{
+	margin-left: 0.5em;
+}
+#loading-gif-holder{
+	/*position: relative;*/
+	width:3em;
+	height: 3em;
+	margin:0 auto;
+	margin-top: 2em;
+/*	background-image: url("images/armour.png");
+	background-size:100% 100%; */
+	/*border: solid white 1px;*/
+}
+#loading-gif{
+	width: 100%;
+	height: 100%;
+	 
+}
+#top-dogs{
+	/*position: absolute;*/
+	/*border: solid yellow 1px;*/
+	/*height: 5em;*/
+	/*width: 100%;*/
+	bottom:0;
+	padding-left: 1em;
+	margin-top: 1em;
+}
+#top-dogs>div{
+	height:5.3em;
+	width:5.3em;
+	/*border: solid red 1px;*/
+}
+#top-dogs>div>img{
+	height:100%;
+	width:100%;
+}
+
+#home{
+	display: none;
+}
+
+.page-header{
+	border: solid 2px yellow; 
+	padding-bottom: 1em;
+}
+.page-region{
+	border: solid 2px white; 
+}
+.page-region-content{
+border: solid 2px red;
+}
+.tile-group{
+	border: pink solid 2px;
+}
+
+.joke-icon{
+	width:3em;
+	height: 3em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
