@@ -8,7 +8,9 @@ body{
 }
  #login-form{
     border: solid 1px yellow;
+     margin:0 auto;
    /* width:20em;
+   
     margin:0 auto;
     margin-top: 10em;*/
     } 
