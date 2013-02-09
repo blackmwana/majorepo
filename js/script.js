@@ -12,6 +12,40 @@ $(document).ready(function() {
             console.debug(response);
         }
     });
+    //models and collections---------------------------------------------------------------
+    // models just rep the strcture at the backend but collections allow array-like manipulation
+    var TopDogs = StackMob.Model.extend({
+        schemaName:"td"  
+    });  
+    
+    var User = StackMob.Model.extend({
+        schemaName:"user"
+    });
+    var Cat = StackMob.Model.extend({// fetch all data to this variable
+       schemaName:"cat"
+    });
+    var Joke = StackMob.Model.extend({
+       schemaName:"joke" 
+    });
+    var Cats = StackMob.Collection.extend({
+        model:Cat
+    });
+    var LoadingView= Backbone.View.extend({
+        
+        el:'body',
+        
+        initialize: function(){
+            this.render();
+        },
+        render:function(){
+            var el = this.$el;
+            el.empty();
+        }
+        
+    });
+    var AppView=Backbone.View.extend({
+        
+    });
         var manifest;
 		var preloader;
 		var toalLoaded = 0;
