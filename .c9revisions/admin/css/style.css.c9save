@@ -33,3 +33,4 @@
 {"ts":1360451260139,"patch":[[{"diffs":[[0,"gin-top:"],[1," 10 em"],[0,"\n    }"]],"start1":85,"start2":85,"length1":14,"length2":20}]],"length":105,"saved":false}
 {"ts":1360451262487,"patch":[[{"diffs":[[0,"-top: 10"],[-1," "],[0,"em\n    }"]],"start1":88,"start2":88,"length1":17,"length2":16}]],"length":104,"saved":false}
 {"ts":1360451264491,"patch":[[{"diffs":[[0,"op: 10em"],[1,";"],[0,"\n    }"]],"start1":90,"start2":90,"length1":14,"length2":15}]],"length":105,"saved":false}
+{"contributors":[],"silentsave":false,"ts":1360451668441,"patch":[[{"diffs":[[1,"@charset \"utf-8\";\n/* CSS Document */\nbody{\n\tposition: absolute;\n\twidth: 100%;\n\theight:100%;\n\toverflow: hidden;\n}\n"],[0,"#login-f"]],"start1":0,"start2":0,"length1":8,"length2":121}]],"length":218,"saved":false}
