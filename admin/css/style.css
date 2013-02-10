@@ -7,7 +7,7 @@ body{
 	overflow: hidden;
 }
  #login-form{
-    border: solid 1px yellow;
+   /* border: solid 1px yellow;*/
      margin:0 auto;
    /* width:20em;
    
@@ -15,7 +15,7 @@ body{
     margin-top: 10em;*/
     } 
     #dagrid{
-        border:solid 1px red;
+        /*border:solid 1px red;*/
         margin-top:5em;
         padding:2em;
     }
