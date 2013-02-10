@@ -37,8 +37,9 @@
 
             $helper = $(helper);
 
-            // clear text when clock on helper
+            // clear text when click on helper
             $helper.on('click', function () {
+                console.log("helper clicked");
                 input = $element.children('input');
                 input.attr('value', '');
                 input.focus();
@@ -100,4 +101,5 @@ $(function(){
 
         $input.Input(params);
     });
+    console.log("input ctrl loaded");
 });
