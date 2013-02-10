@@ -52,6 +52,7 @@ $(document).ready(function() {
 	function Preloader() {
 	
 		manifest = [ //preload all the loadable asssets
+        //fonts
 		{src: "images/chrome.png",id: "chrome-icon"}
 					];
 		preloader = new createjs.PreloadJS();

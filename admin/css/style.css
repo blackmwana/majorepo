@@ -14,3 +14,6 @@ body{
     margin:0 auto;
     margin-top: 10em;*/
     } 
+    #dagrid{
+        border:solid 1px pink;
+    }
