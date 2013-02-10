@@ -32,6 +32,7 @@
             helper = $element.children('.helper').get(0);
 
             if (!helper) {
+                 
                 return;
             }
 
@@ -41,6 +42,7 @@
             $helper.on('click', function () {
                 console.log("helper clicked");
                 input = $element.children('input');
+                console.log(input.html());
                 input.attr('value', '');
                 input.focus();
             }).on('click', function(e){e.preventDefault(); return false;});
