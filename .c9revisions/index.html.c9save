@@ -18,3 +18,8 @@
 {"ts":1360408999590,"patch":[[{"diffs":[[0,"rc=\"http"],[1,"s"],[0,"://ajax."]],"start1":400,"start2":400,"length1":16,"length2":17},{"diffs":[[0,"rc=\"http"],[1,"s"],[0,"://stati"]],"start1":517,"start2":517,"length1":16,"length2":17}]],"length":887,"saved":false}
 {"ts":1360409050216,"patch":[[{"diffs":[[0,"rc=\"http"],[-1,"s"],[0,"://stati"]],"start1":517,"start2":517,"length1":17,"length2":16}]],"length":886,"saved":false}
 {"ts":1360409066136,"patch":[[{"diffs":[[0,"rc=\"http"],[-1,"s"],[0,"://ajax."]],"start1":400,"start2":400,"length1":17,"length2":16}]],"length":885,"saved":false}
+{"contributors":[],"silentsave":true,"ts":1360457471614,"patch":[[{"diffs":[[0,"script>\n"],[1,"        \n"],[0,"\t \n\t</he"]],"start1":810,"start2":810,"length1":16,"length2":25}]],"length":894,"saved":false}
+{"ts":1360457473143,"patch":[[{"diffs":[[0,"        "],[1,"<script type=\"text/javascript\" src=\"http://dev.majokosi.blackmwanagmailcom.stackmobapp.com/js/input-control.js\"></script>"],[0,"\n\t \n\t</h"]],"start1":818,"start2":818,"length1":16,"length2":137}]],"length":1015,"saved":false}
+{"ts":1360457485313,"patch":[[{"diffs":[[0,"cript\" src=\""],[1,"http://dev.majokosi.blackmwanagmailcom.stackmobapp.com/"],[0,"js/stackmobi"]],"start1":776,"start2":776,"length1":24,"length2":79}]],"length":1070,"saved":false}
+{"ts":1360457488948,"patch":[[{"diffs":[[0,"t\" src=\""],[1,"http://dev.majokosi.blackmwanagmailcom.stackmobapp.com/"],[0,"js/scrip"]],"start1":712,"start2":712,"length1":16,"length2":71}]],"length":1125,"saved":false}
+{"ts":1360457491921,"patch":[[{"diffs":[[0,"t\" src=\""],[1,"http://dev.majokosi.blackmwanagmailcom.stackmobapp.com/"],[0,"js/prelo"]],"start1":631,"start2":631,"length1":16,"length2":71}]],"length":1180,"saved":false}
