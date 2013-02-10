@@ -326,3 +326,7 @@
 {"ts":1360456090605,"patch":[[{"diffs":[[0,"                "],[1,"<!"],[0,"</div>\n         "]],"start1":2702,"start2":2702,"length1":32,"length2":34}]],"length":2897,"saved":false}
 {"ts":1360456092964,"patch":[[{"diffs":[[0,"      <!"],[1,"--"],[0,"</div>\n "]],"start1":2712,"start2":2712,"length1":16,"length2":18}]],"length":2899,"saved":false}
 {"ts":1360456096367,"patch":[[{"diffs":[[0,"          </div>"],[1,"-->"],[0,"\n               "]],"start1":2747,"start2":2747,"length1":32,"length2":35}]],"length":2902,"saved":false}
+{"ts":1360456199470,"patch":[[{"diffs":[[0,"     <h3"],[1," class"],[0,">Usernam"]],"start1":2232,"start2":2232,"length1":16,"length2":22}]],"length":2908,"saved":false}
+{"ts":1360456200727,"patch":[[{"diffs":[[0,"h3 class"],[1,"="],[0,">Usernam"]],"start1":2238,"start2":2238,"length1":16,"length2":17}]],"length":2909,"saved":false}
+{"ts":1360456203376,"patch":[[{"diffs":[[0,"3 class="],[1,"\"\""],[0,">Usernam"]],"start1":2239,"start2":2239,"length1":16,"length2":18}]],"length":2911,"saved":false}
+{"ts":1360456205124,"patch":[[{"diffs":[[0," class=\""],[1,"span1"],[0,"\">Userna"]],"start1":2240,"start2":2240,"length1":16,"length2":21}]],"length":2916,"saved":false}
