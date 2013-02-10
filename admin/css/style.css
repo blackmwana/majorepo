@@ -17,3 +17,6 @@ body{
     #dagrid{
         border:solid 1px pink;
     }
+.centered{
+    margin:0 auto;
+}
