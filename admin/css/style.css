@@ -16,7 +16,7 @@ body{
     } 
     #notice-board{
        /* width:10em;*/
-        border:solid 1px white;
+        /*border:solid 1px white;*/
         height: 4em;
         margin:0 auto;
     }
