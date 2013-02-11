@@ -122,3 +122,4 @@
 {"ts":1360620139296,"patch":[[{"diffs":[[0,"        "],[-1,"/*"],[0,"margin-t"]],"start1":429,"start2":429,"length1":18,"length2":16}]],"length":515,"saved":false}
 {"ts":1360620141999,"patch":[[{"diffs":[[0,"top:"],[-1,"5"],[0,"em;\n"]],"start1":444,"start2":444,"length1":9,"length2":8}]],"length":514,"saved":false}
 {"ts":1360620143239,"patch":[[{"diffs":[[0,"gin-top:"],[1,"2"],[0,"em;\n    "]],"start1":440,"start2":440,"length1":16,"length2":17}]],"length":515,"saved":false}
+{"ts":1360620212295,"patch":[[{"diffs":[[0,"gin-top:"],[-1,"2"],[1,"3"],[0,"em;\n    "]],"start1":440,"start2":440,"length1":17,"length2":17}]],"length":515,"saved":false}
