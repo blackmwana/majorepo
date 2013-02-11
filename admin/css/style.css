@@ -14,6 +14,12 @@ body{
     margin:0 auto;
     margin-top: 10em;*/
     } 
+    #notice-board{
+        width:5em;
+        border:solid 1px white;
+        height: 3em;
+        margin:0 auto;
+    }
     #dagrid{
         /*border:solid 1px red;*/
         margin-top:5em;
