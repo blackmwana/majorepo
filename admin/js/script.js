@@ -9,9 +9,13 @@ $(document).ready(function() {
         },
         initialize: function() {
             this.template = _.template($('#login-temp').html());
+            this.render();
 
         },
         render: function() {
+            var el = this.$el;
+            el.empty();
+            el.append(this.template());
             return this;
         },
         onEnter: function(e) {
@@ -63,6 +67,26 @@ $(document).ready(function() {
             return this;
         }
     });
-
+    var AppRouter = Backbone.Router.extend({
+        routes:{
+            '':'login'
+        },
+        login:function(){
+            StackMob.isLoggedIn({
+                yes:function(){
+                    console.log(" a user is logged in");
+                },
+                no:function(){
+                    console.log("no user logged in");
+                    new LoginView();
+                },
+                error:function(){
+                    console.log("error");
+                }
+            });
+        }
+    });
+majokosiApp= new AppRouter();
+Backbone.history.start();
 
 });
