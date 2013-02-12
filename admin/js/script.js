@@ -72,6 +72,7 @@ $(document).ready(function() {
             '':'login'
         },
         login:function(){
+            console.log("login route");
             StackMob.isLoggedIn({
                 yes:function(){
                     console.log(" a user is logged in");
@@ -87,6 +88,7 @@ $(document).ready(function() {
         }
     });
 majokosiApp= new AppRouter();
+console.log("app launched")
 Backbone.history.start();
-
+console.log("backbone history start")
 });

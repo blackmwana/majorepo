@@ -753,3 +753,26 @@
 {"ts":1360628693264,"patch":[[{"diffs":[[0,"le.log(\""],[1,"erro"],[0,"\")\n     "]],"start1":2538,"start2":2538,"length1":16,"length2":20}]],"length":2665,"saved":false}
 {"ts":1360628694842,"patch":[[{"diffs":[[0,"og(\"erro"],[1,"r"],[0,"\")\n     "]],"start1":2542,"start2":2542,"length1":16,"length2":17}]],"length":2666,"saved":false}
 {"ts":1360628697988,"patch":[[{"diffs":[[0,"\"error\")"],[1,";"],[0,"\n       "]],"start1":2545,"start2":2545,"length1":16,"length2":17}]],"length":2667,"saved":false}
+{"ts":1360628878579,"patch":[[{"diffs":[[0,"gin:function(){\n"],[1,"            \n"],[0,"            Stac"]],"start1":2180,"start2":2180,"length1":32,"length2":45}]],"length":2680,"saved":false}
+{"ts":1360628880305,"patch":[[{"diffs":[[0,"        "],[1,"console"],[0,"\n       "]],"start1":2200,"start2":2200,"length1":16,"length2":23}]],"length":2687,"saved":false}
+{"ts":1360628882763,"patch":[[{"diffs":[[0," console"],[1,".l"],[0,"\n       "]],"start1":2207,"start2":2207,"length1":16,"length2":18}]],"length":2689,"saved":false}
+{"ts":1360628884310,"patch":[[{"diffs":[[0,"onsole.l"],[1,"og()"],[0,"\n       "]],"start1":2209,"start2":2209,"length1":16,"length2":20}]],"length":2693,"saved":false}
+{"ts":1360628885826,"patch":[[{"diffs":[[0,"ole.log("],[1,"\"\""],[0,")\n      "]],"start1":2212,"start2":2212,"length1":16,"length2":18}]],"length":2695,"saved":false}
+{"ts":1360628892317,"patch":[[{"diffs":[[0,"le.log(\""],[1,"login rou"],[0,"\")\n     "]],"start1":2213,"start2":2213,"length1":16,"length2":25}]],"length":2704,"saved":false}
+{"ts":1360628894117,"patch":[[{"diffs":[[0,"ogin rou"],[1,"te"],[0,"\")\n     "]],"start1":2222,"start2":2222,"length1":16,"length2":18}]],"length":2706,"saved":false}
+{"ts":1360628896091,"patch":[[{"diffs":[[0," route\")"],[1,";"],[0,"\n       "]],"start1":2226,"start2":2226,"length1":16,"length2":17}]],"length":2707,"saved":false}
+{"ts":1360628901556,"patch":[[{"diffs":[[0,"tart();\n"],[1,"con"],[0,"\n});"]],"start1":2695,"start2":2695,"length1":12,"length2":15}]],"length":2710,"saved":false}
+{"ts":1360628903362,"patch":[[{"diffs":[[0,"t();\ncon"],[1,"sole.l"],[0,"\n});"]],"start1":2698,"start2":2698,"length1":12,"length2":18}]],"length":2716,"saved":false}
+{"ts":1360628904199,"patch":[[{"diffs":[[0,"onsole.l"],[1,"o"],[0,"\n});"]],"start1":2704,"start2":2704,"length1":12,"length2":13}]],"length":2717,"saved":false}
+{"ts":1360628905778,"patch":[[{"diffs":[[0,"nsole.lo"],[1,"g(\"\")"],[0,"\n});"]],"start1":2705,"start2":2705,"length1":12,"length2":17}]],"length":2722,"saved":false}
+{"ts":1360628907385,"patch":[[{"diffs":[[0,"le.log(\""],[1,"b"],[0,"\")\n});"]],"start1":2708,"start2":2708,"length1":14,"length2":15}]],"length":2723,"saved":false}
+{"ts":1360628908955,"patch":[[{"diffs":[[0,"e.log(\"b"],[1,"ackbo"],[0,"\")\n});"]],"start1":2709,"start2":2709,"length1":14,"length2":19}]],"length":2728,"saved":false}
+{"ts":1360628910842,"patch":[[{"diffs":[[0,"(\"backbo"],[1,"ne histo"],[0,"\")\n});"]],"start1":2714,"start2":2714,"length1":14,"length2":22}]],"length":2736,"saved":false}
+{"ts":1360628913915,"patch":[[{"diffs":[[0,"ne histo"],[1,"ry start"],[0,"\")\n});"]],"start1":2722,"start2":2722,"length1":14,"length2":22}]],"length":2744,"saved":false}
+{"ts":1360628917995,"patch":[[{"diffs":[[0,"uter();\n"],[1,"\n"],[0,"Backbone"]],"start1":2669,"start2":2669,"length1":16,"length2":17}]],"length":2745,"saved":false}
+{"ts":1360628919782,"patch":[[{"diffs":[[0,"uter();\n"],[1,"console"],[0,"\nBackbon"]],"start1":2669,"start2":2669,"length1":16,"length2":23}]],"length":2752,"saved":false}
+{"ts":1360628921317,"patch":[[{"diffs":[[0,"\nconsole"],[1,".lo"],[0,"\nBackbon"]],"start1":2676,"start2":2676,"length1":16,"length2":19}]],"length":2755,"saved":false}
+{"ts":1360628922936,"patch":[[{"diffs":[[0,"nsole.lo"],[1,"g()"],[0,"\nBackbon"]],"start1":2679,"start2":2679,"length1":16,"length2":19}]],"length":2758,"saved":false}
+{"ts":1360628924492,"patch":[[{"diffs":[[0,"ole.log("],[1,"\"\""],[0,")\nBackbo"]],"start1":2681,"start2":2681,"length1":16,"length2":18}]],"length":2760,"saved":false}
+{"ts":1360628926020,"patch":[[{"diffs":[[0,"le.log(\""],[1,"ap"],[0,"\")\nBackb"]],"start1":2682,"start2":2682,"length1":16,"length2":18}]],"length":2762,"saved":false}
+{"ts":1360628929997,"patch":[[{"diffs":[[0,".log(\"ap"],[1,"p launched"],[0,"\")\nBackb"]],"start1":2684,"start2":2684,"length1":16,"length2":26}]],"length":2772,"saved":false}
