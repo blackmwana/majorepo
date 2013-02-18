@@ -19,6 +19,7 @@ $(document).ready(function() {
             return this;
         },
         onEnter: function(e) {
+            console.debug(e.keyCode);
             if (e.keyCode == 13) {
                 if ($('#pass').val().replace(/\W/g, '') === '') $('#pass').focus();
                 else if ($('#username').val().replace(/\W/g, '') === '') $('#username').focus();
@@ -28,8 +29,8 @@ $(document).ready(function() {
         },
         validate: function() {
 
-            var u = $('#username').html().replace(/\W/g, '');
-            var p = $('#pass').html().replace(/\W/g, '');
+            var u = $('#username').val().replace(/\W/g, '');
+            var p = $('#pass').val().replace(/\W/g, '');
             console.log('user: ' + u + " password: " + p);
             if (p === '' || u === '') this.loginError();
             else this.admin_login(u, p);
@@ -51,7 +52,7 @@ $(document).ready(function() {
             });
         },
         loginError: function() {
-
+            console.debug('login error function called');
         }
     });
 
