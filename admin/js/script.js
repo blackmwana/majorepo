@@ -8,7 +8,7 @@ $(document).ready(function() {
             "keypress #pass #username": "onEnter"
         },
         initialize: function() {
-            this.template = _.template($('#login-temp').html());
+            this.template = _.template($('#item-login').html());
             this.render();
 
         },
