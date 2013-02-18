@@ -38,6 +38,6 @@ body{
     left:7.2em;
 }
 #home-content{
-    width:50em;
+    /*width:50em;*/
     border: solid 1px black;
 }
