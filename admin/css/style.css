@@ -32,6 +32,9 @@ body{
 .centered{
   /*  margin:0 auto;*/
 }
+h1{
+    color:white;
+}
 #header-icons{
     position:relative;
     top:1.5em;
