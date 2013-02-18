@@ -544,3 +544,5 @@
 {"ts":1361212618988,"patch":[[{"diffs":[[0,"            "],[1,"    "],[0,"<h1>Admin se"]],"start1":6038,"start2":6038,"length1":24,"length2":28}]],"length":6158,"saved":false}
 {"ts":1361212622530,"patch":[[{"diffs":[[0,"    <h1>"],[1,"Majokosi "],[0,"Admin se"]],"start1":6050,"start2":6050,"length1":16,"length2":25}]],"length":6167,"saved":false}
 {"ts":1361212627410,"patch":[[{"diffs":[[0,"min "],[-1,"section"],[0,"</h1"]],"start1":6069,"start2":6069,"length1":15,"length2":8}]],"length":6160,"saved":false}
+{"ts":1361212916093,"patch":[[{"diffs":[[0,"ss=\"page"],[-1," "],[1,"-"],[0,"header c"]],"start1":5416,"start2":5416,"length1":17,"length2":17}]],"length":6160,"saved":false}
+{"ts":1361212919621,"patch":[[{"diffs":[[0,"e-header"],[-1," "],[1,"-"],[0,"content\""]],"start1":5423,"start2":5423,"length1":17,"length2":17}]],"length":6160,"saved":false}
