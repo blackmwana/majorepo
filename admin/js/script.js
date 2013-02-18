@@ -22,8 +22,8 @@ $(document).ready(function() {
         onEnter: function(e) {
             console.debug(e.keyCode);
             if (e.keyCode == 13) {
-                if ($('#pass').val().replace(/\W/g, '') === '') $('#pass').focus();
-                else if ($('#username').val().replace(/\W/g, '') === '') $('#username').focus();
+                if ($('#username').val().replace(/\W/g, '') === '') $('#sername').focus();
+                else if ($('#pass').val().replace(/\W/g, '') === '') $('#pass').focus();
                 else this.validate();
             }
 
