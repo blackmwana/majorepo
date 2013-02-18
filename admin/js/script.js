@@ -20,8 +20,8 @@ $(document).ready(function() {
         },
         onEnter: function(e) {
             if (e.keyCode == 13) {
-                if ($('#pass').html().replace(/\W/g, '') === '') $('#pass').focus();
-                else if ($('#username').html().replace(/\W/g, '') === '') $('#username').focus();
+                if ($('#pass').val().replace(/\W/g, '') === '') $('#pass').focus();
+                else if ($('#username').val().replace(/\W/g, '') === '') $('#username').focus();
                 else this.validate();
             }
 
