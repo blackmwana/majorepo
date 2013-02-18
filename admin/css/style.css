@@ -34,8 +34,8 @@ body{
 }
 #header-icons{
     position:relative;
-    top:3em;
-    right:3em;
+    top:2em;
+    left:3em;
 }
 #home-content{
     width:50em;
