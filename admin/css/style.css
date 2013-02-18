@@ -32,6 +32,11 @@ body{
 .centered{
   /*  margin:0 auto;*/
 }
+#header-icons{
+    position:relative;
+    top:3em;
+    right:3em;
+}
 #home-content{
     width:50em;
     border: solid 1px black;
