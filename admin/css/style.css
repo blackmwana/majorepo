@@ -19,6 +19,7 @@ body{
         /*border:solid 1px white;*/
         height: 4em;
         margin:0 auto;
+        display:none;
     }
     #dagrid{
         /*border:solid 1px red;
