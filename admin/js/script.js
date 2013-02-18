@@ -80,10 +80,10 @@ $(document).ready(function() {
                 no:function(){
                     console.log("no user logged in");
                     new LoginView();
-                },
+                }/*,
                 error:function(){
                     console.log("error");
-                }
+                }*/
             });
         }
     });
