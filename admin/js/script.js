@@ -5,7 +5,7 @@ $(document).ready(function() {
         events: {
             "click #login-btn": "validate",
             //"click #problems-btn":"problem",
-            "keypress #pass #username": "onEnter"
+            "keypress #username": "onEnter"
         },
         initialize: function() {
             this.template = _.template($('#item-login').html());
