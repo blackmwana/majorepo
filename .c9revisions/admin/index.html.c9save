@@ -696,3 +696,13 @@
 {"ts":1361286863034,"patch":[[{"diffs":[[0,"<i class"],[1,"="],[0,"></i> \n "]],"start1":7244,"start2":7244,"length1":16,"length2":17}]],"length":7508,"saved":false}
 {"ts":1361286865249,"patch":[[{"diffs":[[0,"i class="],[1,"\"icon\""],[0,"></i> \n "]],"start1":7245,"start2":7245,"length1":16,"length2":22}]],"length":7514,"saved":false}
 {"ts":1361286867505,"patch":[[{"diffs":[[0,"ss=\"icon"],[1,"-stats"],[0,"\"></i> \n"]],"start1":7250,"start2":7250,"length1":16,"length2":22}]],"length":7520,"saved":false}
+{"ts":1361287320493,"patch":[[{"diffs":[[0,"<div class=\"tile"],[1," icon"],[0,"\">\n             "]],"start1":7154,"start2":7154,"length1":32,"length2":37}]],"length":7525,"saved":false}
+{"ts":1361287325432,"patch":[[{"diffs":[[0,"<div class=\"tile"],[1," icon"],[0,"\">\n             "]],"start1":6853,"start2":6853,"length1":32,"length2":37}]],"length":7530,"saved":false}
+{"ts":1361287330589,"patch":[[{"diffs":[[0,"ss=\"tile"],[1," icon"],[0,"\">\n     "]],"start1":6552,"start2":6552,"length1":16,"length2":21}]],"length":7535,"saved":false}
+{"ts":1361287336382,"patch":[[{"diffs":[[0,"               \n"],[1,"                    <\n"],[0,"                "]],"start1":6424,"start2":6424,"length1":32,"length2":54}]],"length":7557,"saved":false}
+{"ts":1361287338351,"patch":[[{"diffs":[[0,"       <"],[1,"div"],[0,"\n       "]],"start1":6453,"start2":6453,"length1":16,"length2":19}]],"length":7560,"saved":false}
+{"ts":1361287340352,"patch":[[{"diffs":[[0,"    <div"],[1,"></div>"],[0,"\n       "]],"start1":6456,"start2":6456,"length1":16,"length2":23}]],"length":7567,"saved":false}
+{"ts":1361287342779,"patch":[[{"diffs":[[0,"   <div>"],[-1,"</div>"],[0,"\n       "]],"start1":6457,"start2":6457,"length1":22,"length2":16},{"diffs":[[0,"                "],[1,"</div>"],[0,"\n               "]],"start1":6514,"start2":6514,"length1":32,"length2":38}]],"length":7567,"saved":false}
+{"ts":1361287345208,"patch":[[{"diffs":[[0,"    <div"],[1," class"],[0,">\n      "]],"start1":6456,"start2":6456,"length1":16,"length2":22}]],"length":7573,"saved":false}
+{"ts":1361287347551,"patch":[[{"diffs":[[0,"iv class"],[1,"=\"\""],[0,">\n      "]],"start1":6462,"start2":6462,"length1":16,"length2":19}]],"length":7576,"saved":false}
+{"ts":1361287349457,"patch":[[{"diffs":[[0," class=\""],[1,"brand"],[0,"\">\n     "]],"start1":6464,"start2":6464,"length1":16,"length2":21}]],"length":7581,"saved":false}
