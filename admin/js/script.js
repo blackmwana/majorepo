@@ -57,8 +57,56 @@ $(document).ready(function() {
         }
     });
 
-    var AppView = Backbone.View.extend({
+    var MainView = Backbone.View.extend({
         el: 'body',
+        events: {
+        
+        },
+        initialize: function() {
+
+        },
+        render: function() {
+            return this;
+        }
+    });
+     var HomeView = Backbone.View.extend({
+        el: '',
+        events: {
+
+        },
+        initialize: function() {
+
+        },
+        render: function() {
+            return this;
+        }
+    });
+     var CatsView = Backbone.View.extend({
+        el: '',
+        events: {
+
+        },
+        initialize: function() {
+
+        },
+        render: function() {
+            return this;
+        }
+    });
+    var JokesView = Backbone.View.extend({
+        el: '',
+        events: {
+
+        },
+        initialize: function() {
+
+        },
+        render: function() {
+            return this;
+        }
+    });
+    var StatsView = Backbone.View.extend({
+        el: '',
         events: {
 
         },
@@ -89,7 +137,7 @@ $(document).ready(function() {
             });
         }
     });
-majokosiApp= new AppRouter();
+majokosiAdminApp = new AppRouter();
 console.log("app launched")
 Backbone.history.start();
 console.log("backbone history start")
