@@ -60,24 +60,45 @@ $(document).ready(function() {
     var MainView = Backbone.View.extend({
         el: 'body',
         events: {
-        
+            "click #menu-btn":"showMenu",
+            "click #home-btn":"goHome",
+            "click.user-login":"showUserDialogue"
         },
         initialize: function() {
+            this.template=_.template($('item-main').html());
+            this.render();
 
         },
         render: function() {
+            var el= this.$el;
+            el.empty();
+            el.append(this.template());
+            this.homeView = new HomeView();
+            $('.view-container').append(this.homeView.render().el);
             return this;
+        },
+        showSidebar:function(){
+            console.debug('show sidebar');
+        },
+        goHome: function(){
+            console.debug('going home');
+        },
+        showUserDialogue:function(){
+            
         }
     });
      var HomeView = Backbone.View.extend({
-        el: '',
+        /*el: '',*/
+        id:"home-content",
+        className:"page-region-content tiles", 
         events: {
 
         },
         initialize: function() {
-
+            this.template=_.template($('item-home').html());
         },
         render: function() {
+            var el=this.$el;
             return this;
         }
     });
@@ -115,6 +136,18 @@ $(document).ready(function() {
         },
         render: function() {
             return this;
+        }
+    });
+    var SidebarView= Backbone.View.extend({
+        el:'',
+        events:{
+            
+        },
+        initialize:function(){
+            
+        },
+        render:function(){
+            
         }
     });
     var AppRouter = Backbone.Router.extend({

@@ -79,12 +79,10 @@
             </div>
         </div>
         </script>
-    </head>
-<body class="bg-color-red modern-ui">
-    <div class="page secondary fixed-header bg-color-red">
+        <script type="text/template" id="item-main">
+             <div class="page secondary fixed-header bg-color-red">
         <div class="page-header bg-color-darken">
             <div class="page-header-content">
-                
                 <div class="user-login">
                     <a href="#">
                             <div class="name">
@@ -105,9 +103,12 @@
                 </div>
             </div>
         </div>
-<div class="page-region">
-    <div id="home-content" class="page-region-content tiles">
-        <div class="tile icon">
+        <div class="page-region view-container"></div>
+    </div>
+        </script>
+        <script type="text/template" id= "item-home">
+            <!--<div id="home-content" class="page-region-content tiles">-->
+        <div class="tile icon" id="cats-pane">
             <div class="tile-content">
                 <i class="icon-grid"></i>
             </div>
@@ -115,7 +116,7 @@
                 <span class='name'>Categories</span>
             </div>
         </div>
-        <div class="tile icon">
+        <div class="tile icon" id="users-pane">
             <div class="tile-content">
                 <i class="icon-user"></i>
             </div>
@@ -123,7 +124,7 @@
                 <span class="name">Users</span>
             </div>
         </div>
-        <div class="tile icon">
+        <div class="tile icon" id="jokes-pane">
             <div class="tile-content">
                 <i class="icon-smiley"></i>
             </div>
@@ -131,7 +132,7 @@
                 <span class="name">Jokes</span>
             </div>
         </div>
-        <div class="tile icon">
+        <div class="tile icon" id="stats-pane">
             <div class="tile-content">
                 <i class="icon-stats"></i>
             </div>
@@ -140,9 +141,11 @@
                 <!---->
             </div>
         </div>
-    </div>
-</div>
-    </div>
+    <!--</div>-->
+        </script>
+    </head>
+<body class="bg-color-red modern-ui">
+   
 </body>
     
 </html>
