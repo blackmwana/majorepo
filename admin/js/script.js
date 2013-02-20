@@ -128,7 +128,9 @@ $(document).ready(function() {
         }
     });
      var CatsView = Backbone.View.extend({
-        el: '',
+        //el: '',
+        id:"cat-content",
+        className:"page-region-content ",
         events: {
 
         },

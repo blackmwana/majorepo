@@ -819,3 +819,11 @@
 {"ts":1361402046161,"patch":[[{"diffs":[[0,"      <a href=\"#"],[1,"admin"],[0,"\" class=\"place-r"]],"start1":7683,"start2":7683,"length1":32,"length2":37}]],"length":7775,"saved":false}
 {"ts":1361402053438,"patch":[[{"diffs":[[0," href=\"#"],[-1,"admin"],[0,"\" class="]],"start1":7691,"start2":7691,"length1":21,"length2":16}]],"length":7770,"saved":false}
 {"ts":1361402071622,"patch":[[{"diffs":[[0,"       <a href=\""],[-1,"#"],[0,"\" class=\"place-r"]],"start1":7682,"start2":7682,"length1":33,"length2":32}]],"length":7769,"saved":false}
+{"ts":1361403359088,"patch":[[{"diffs":[[0,"angeDark"],[1," fg"],[0,"\">\n     "]],"start1":7606,"start2":7606,"length1":16,"length2":19}]],"length":7773,"saved":false}
+{"ts":1361403361220,"patch":[[{"diffs":[[0,"eDark fg"],[1,"-color-"],[0,"\">\n     "]],"start1":7609,"start2":7609,"length1":16,"length2":23}]],"length":7780,"saved":false}
+{"ts":1361403363872,"patch":[[{"diffs":[[0,"g-color-"],[1,"white"],[0,"\">\n     "]],"start1":7616,"start2":7616,"length1":16,"length2":21}]],"length":7785,"saved":false}
+{"ts":1361403421817,"patch":[[{"diffs":[[0,"olor"],[-1,"-orangeDa"],[0,"rk f"]],"start1":7599,"start2":7599,"length1":17,"length2":8}]],"length":7776,"saved":false}
+{"ts":1361403423902,"patch":[[{"diffs":[[0,"bg-color"],[1,"-"],[0,"rk fg-co"]],"start1":7595,"start2":7595,"length1":16,"length2":17}]],"length":7777,"saved":false}
+{"ts":1361403426059,"patch":[[{"diffs":[[0,"g-color-"],[1,"da"],[0,"rk fg-co"]],"start1":7596,"start2":7596,"length1":16,"length2":18}]],"length":7779,"saved":false}
+{"ts":1361403428425,"patch":[[{"diffs":[[0,"lor-dark"],[1,"erk"],[0," fg-colo"]],"start1":7600,"start2":7600,"length1":16,"length2":19}]],"length":7782,"saved":false}
+{"ts":1361403430525,"patch":[[{"diffs":[[0,"or-darke"],[-1,"rk"],[1,"n"],[0," fg-colo"]],"start1":7601,"start2":7601,"length1":18,"length2":17}]],"length":7781,"saved":false}
