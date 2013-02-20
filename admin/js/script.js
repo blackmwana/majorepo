@@ -69,7 +69,7 @@ $(document).ready(function() {
     var MainView = Backbone.View.extend({
         el: 'body',
         events: {
-            "click #menu-btn":"showMenu",
+            "click #menu-btn":"showSidebar",
             "click #home-btn":"goHome",
             "click.user-login":"showUserDialogue"
         },
