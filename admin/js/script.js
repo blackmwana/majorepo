@@ -74,7 +74,7 @@ $(document).ready(function() {
             "click.user-login":"showUserDialogue"
         },
         initialize: function() {
-            this.template=_.template($('item-main').html());
+            this.template=_.template($('#item-main').html());
             //this.render();//rendering in this.brm 
 
         },
@@ -109,7 +109,7 @@ $(document).ready(function() {
 
         },
         initialize: function() {
-            this.template=_.template($('item-home').html());
+            this.template=_.template($('#item-home').html());
         },
         render: function() {
             var el=this.$el;
