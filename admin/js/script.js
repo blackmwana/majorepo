@@ -2,7 +2,7 @@
 $(document).ready(function() {
     //http://lostechies.com/derickbailey/2011/09/15/zombies-run-managing-page-transitions-in-backbone-apps/
     Backbone.View.prototype.close = function() {
-        console.log(this);
+        console.log(this.toJSON);
         if(this.el ==='body'){ 
             $('body').empty();
         console.debug('emptying body');
