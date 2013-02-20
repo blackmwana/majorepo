@@ -1,5 +1,15 @@
 //author= blackmwana
 $(document).ready(function() {
+    //http://lostechies.com/derickbailey/2011/09/15/zombies-run-managing-page-transitions-in-backbone-apps/
+    Backbone.View.prototype.close = function() {
+        if(this.el ==='body') $('body').empty();
+        else this.remove();//el.remove
+        this.unbind();
+        if (this.onClose) {
+            this.onClose();
+        }
+    }
+    //////////////////
     var LoginView = Backbone.View.extend({
         el: 'body',
         events: {
@@ -10,8 +20,7 @@ $(document).ready(function() {
         },
         initialize: function() {
             this.template = _.template($('#item-login').html());
-            this.render();
-
+          //  this.render();//rendering in this.brm 
         },
         render: function() {
             var el = this.$el;
@@ -29,7 +38,6 @@ $(document).ready(function() {
 
         },
         validate: function() {
-
             var u = $('#username').val().replace(/\W/g, '');
             var p = $('#pass').val().replace(/\W/g, '');
             console.log('user: ' + u + " password: " + p);
@@ -45,7 +53,8 @@ $(document).ready(function() {
             user.login(false, {
                 success: function(model) {
                     // redirect user to a new page
-                    console.debug(model);
+                    console.debug(model +' navigating to main view');
+                    majokosiAdminApp.navigate('/home',true);
                 },
                 error: function(model, response) {
                     console.debug(response);
@@ -66,15 +75,17 @@ $(document).ready(function() {
         },
         initialize: function() {
             this.template=_.template($('item-main').html());
-            this.render();
+            //this.render();//rendering in this.brm 
 
         },
         render: function() {
             var el= this.$el;
             el.empty();
             el.append(this.template());
-            this.homeView = new HomeView();
-            $('.view-container').append(this.homeView.render().el);
+            //removing this next part to implement region managers
+            //this.homeView = new HomeView();
+        //    $('.view-container').append(this.homeView.render().el);
+            this.goHome();
             return this;
         },
         showSidebar:function(){
@@ -82,6 +93,9 @@ $(document).ready(function() {
         },
         goHome: function(){
             console.debug('going home');
+            this.homeView = new HomeView();
+           // majokosiAdminApp.navigate('/home',true);
+           majokosiAdminApp.prm.showView(this.homeView);
         },
         showUserDialogue:function(){
             
@@ -99,6 +113,9 @@ $(document).ready(function() {
         },
         render: function() {
             var el=this.$el;
+            $('.page-region-content').remove();
+            el.append(this.template());
+         
             return this;
         }
     });
@@ -150,24 +167,57 @@ $(document).ready(function() {
             
         }
     });
+    function PageRegionManager() {
+
+        this.showView(view) {
+            if (this.currentView) {
+                this.currentView.close();
+            }
+            this.currentView = view;
+            //this.currentView.render();
+            $(".view-container").html(this.currentView.render().el);
+        }
+
+    }
+    function BodyRegionManager(){//for body top level views
+        this.showView(view) {
+            if (this.currentView) {
+                this.currentView.close();
+            }
+            this.currentView = view;
+            //this.currentView.render();
+            //$("body").html(this.currentView.render().el);
+            this.currentView.render();
+        }
+    }
     var AppRouter = Backbone.Router.extend({
         routes:{
-            '':'login'
+            '':'login',
+            'home':'main'
+        },
+        initialize:function(){
+            this.prm = new PageRegionManager();
+            this.brm = new BodyRegionManager();
         },
         login:function(){
             console.log("login route");
             StackMob.isLoggedIn({
-                yes:function(){
-                    console.log(" a user is logged in");
+                yes:function(username){
+                    console.log(username+" :is logged in");
+                    //get user and navigate to home
+                    majokosiAdminApp.navigate('/home',true)
                 },
                 no:function(){
                     console.log("no user logged in");
-                    new LoginView();
+                   this.brm.showView(new LoginView());
                 }/*,
                 error:function(){
                     console.log("error");
                 }*/
             });
+        },
+        main:function(){
+            this.brm.showView(new MainView());// user model to be passed into the constructor
         }
     });
 majokosiAdminApp = new AppRouter();
