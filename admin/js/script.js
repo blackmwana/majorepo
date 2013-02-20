@@ -5,7 +5,7 @@ $(document).ready(function() {
         if(this.el ==='body') $('body').empty();
         else this.remove();//el.remove
         this.unbind();
-        if (this.onClose) {
+        if(this.onClose) {
             this.onClose();
         }
     }
@@ -169,8 +169,8 @@ $(document).ready(function() {
     });
     function PageRegionManager() {
 
-        this.showView(view) {
-            if (this.currentView) {
+        this.showView = function(view) {
+            if(this.currentView) {
                 this.currentView.close();
             }
             this.currentView = view;
@@ -180,8 +180,8 @@ $(document).ready(function() {
 
     }
     function BodyRegionManager(){//for body top level views
-        this.showView(view) {
-            if (this.currentView) {
+        this.showView = function(view) {
+            if(this.currentView) {
                 this.currentView.close();
             }
             this.currentView = view;
