@@ -2,8 +2,13 @@
 $(document).ready(function() {
     //http://lostechies.com/derickbailey/2011/09/15/zombies-run-managing-page-transitions-in-backbone-apps/
     Backbone.View.prototype.close = function() {
-        if(this.el ==='body') $('body').empty();
-        else this.remove();//el.remove
+        if(this.el ==='body'){ 
+            $('body').empty();
+        console.debug('emptying body');
+        }
+        else {this.remove();//el.remove
+        console.debug(this.el+': removing view  el');
+        }
         this.unbind();
         if(this.onClose) {
             this.onClose();
@@ -53,7 +58,7 @@ $(document).ready(function() {
             user.login(false, {
                 success: function(model) {
                     // redirect user to a new page
-                    console.debug(model +' navigating to main view');
+                    console.debug(model.toJSON +' navigating to main view');
                     majokosiAdminApp.navigate('/home',true);
                 },
                 error: function(model, response) {
@@ -92,7 +97,7 @@ $(document).ready(function() {
             console.debug('show sidebar');
         },
         goHome: function(){
-            console.debug('going home');
+            console.debug('going home, showing homeview');
             this.homeView = new HomeView();
            // majokosiAdminApp.navigate('/home',true);
            majokosiAdminApp.prm.showView(this.homeView);
@@ -220,6 +225,7 @@ $(document).ready(function() {
         },
         main:function(){
             //check if user is logged on if user object is not there fetch it
+            console.debug('main function :routing to main view');
             this.brm.showView(new MainView());// user model to be passed into the constructor
         }
     });
