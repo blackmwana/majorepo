@@ -61,7 +61,8 @@ $(document).ready(function() {
             user.login(false, {
                 success: function(model) {
                     // redirect user to a new page
-                    console.debug(model.toJSON +' navigating to main view');
+                    console.debug(model);
+                    console.debug(' navigating to main view');
                     majokosiAdminApp.navigate('/home',true);
                 },
                 error: function(model, response) {
@@ -211,6 +212,7 @@ $(document).ready(function() {
         },
         login:function(){
             console.log("login route");
+            $('body').empty();
             ar = this;
             StackMob.isLoggedIn({
                 yes:function(username){
