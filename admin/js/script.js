@@ -4,15 +4,16 @@ $(document).ready(function() {
     Backbone.View.prototype.close = function() {
         console.log(this.localName);
         console.log(this);
-        if(this.el ==='body'){ 
+        if (this.el.tagName.toLowerCase() === 'body') {
             $('body').empty();
-        console.debug('emptying body');
+            console.debug('emptying body');
         }
-        else {this.remove();//el.remove
-        console.debug(this.el+': removing view  el');
+        else {
+            this.remove(); //el.remove
+            console.debug(this.el + ': removing view  el');
         }
         this.unbind();
-        if(this.onClose) {
+        if (this.onClose) {
             this.onClose();
         }
     }
