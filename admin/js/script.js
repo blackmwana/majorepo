@@ -229,7 +229,24 @@ $(document).ready(function() {
         main:function(){
             //check if user is logged on if user object is not there fetch it
             console.debug('main function :routing to main view');
-            this.brm.showView(new MainView());// user model to be passed into the constructor
+            ar = this;
+            StackMob.isLoggedIn({
+                yes:function(username){
+                    console.log(username+" :is logged in");
+                    //get user and navigate to home
+                  //  majokosiAdminApp.navigate('/home',true)
+                    //ar.navigate('/home',true)
+                    ar.brm.showView(new MainView());// user model to be passed into the constructor
+                },
+                no:function(){
+                    console.log("no user logged in");
+                   ar.brm.showView(new LoginView());
+                }/*,
+                error:function(){
+                    console.log("error");
+                }*/
+            });
+            
         }
     });
 majokosiAdminApp = new AppRouter();
