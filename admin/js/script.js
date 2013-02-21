@@ -338,7 +338,8 @@ $(document).ready(function() {
         //    el.empty();
             el.append(this.template(this.model.toJSON()));
             $('.avatar img').attr('src',function(){
-                console.debug(admin.toJSON().email);
+                //console.debug(admin.toJSON().email);
+                //maybe check to see if email exists
                 return get_gravatar(admin.toJSON().email,80);
             });
             //removing this next part to implement region managers
