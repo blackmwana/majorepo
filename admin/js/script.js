@@ -340,7 +340,7 @@ $(document).ready(function() {
             $('.avatar img').attr('src',function(){
                 console.debug(admin.toJSON().email);
                 //return get_gravatar(admin.toJSON().email,80);
-                return get_gravatar('ashline.m@gmail.com',80);
+                return get_gravatar('ashlingfde.m@gmail.com',80);
             });
             //removing this next part to implement region managers
             //this.homeView = new HomeView();
