@@ -338,7 +338,7 @@ $(document).ready(function() {
             //console.debug('getUser:fetching user');
             user.fetch({
                 success:function(){
-                    admin=user;
+                    admin = user;
                 console.debug('user fetched');
                 console.debug(user);
                 },
@@ -381,13 +381,42 @@ $(document).ready(function() {
             StackMob.isLoggedIn({
                 yes:function(username){
                     console.log(username+" :is logged in");
-                    ar.getUser(username);
+                   // ar.getUser(username);
+                    ////////////////////
+                    if (!admin) {
+                        //console.debug('getUser:about to fetch user');
+                        var user = new StackMob.User({
+                            username: username
+                        });
+                        //console.debug('getUser:fetching user');
+                        user.fetch({
+                            success: function() {
+                                admin = user;
+                                console.debug('user fetched');
+                                console.debug(user);
+                    
+                                if (!mainView) mainView = new MainView({
+                                    model: admin
+                                });
+                                ar.brm.showView(mainView); // user model to be passed into the constructor
+                                mainView.goHome();
+                            },
+                            error: function() {
+                                console.debug('user  fetch error');
+                            }
+                        });
+                        // return user;
+                    }
+                    else {
+                        console.debug('admin already exists');
+                        console.debug(admin);
+                        //   return admin;
+                    }
+                    ////////////////////
                     //get user and navigate to home
                   //  majokosiAdminApp.navigate('/home',true)
                     //ar.navigate('/home',true)
-                    if(!mainView) mainView = new MainView({model:admin});
-                    ar.brm.showView(mainView);// user model to be passed into the constructor
-                    mainView.goHome();
+                   
                     
                 },
                 no:function(){
@@ -407,13 +436,44 @@ $(document).ready(function() {
             StackMob.isLoggedIn({
                 yes:function(username){
                     console.log(username+" :is logged in");
-                     ar.getUser(username);
+                    // ar.getUser(username);
                     //get user and navigate to home
                   //  majokosiAdminApp.navigate('/home',true)
                     //ar.navigate('/home',true)
-                    if(!mainView) mainView = new MainView({model:admin});
-                    ar.brm.showView(mainView);// user model to be passed into the constructor
-                   mainView.goStats();
+                     ////////////////////
+                    if (!admin) {
+                        //console.debug('getUser:about to fetch user');
+                        var user = new StackMob.User({
+                            username: username
+                        });
+                        //console.debug('getUser:fetching user');
+                        user.fetch({
+                            success: function() {
+                                admin = user;
+                                console.debug('user fetched');
+                                console.debug(user);
+                    
+                                if (!mainView) mainView = new MainView({
+                                    model: admin
+                                });
+                                ar.brm.showView(mainView); // user model to be passed into the constructor
+                                mainView.goStats();
+                            },
+                            error: function() {
+                                console.debug('user  fetch error');
+                            }
+                        });
+                        // return user;
+                    }
+                    else {
+                        console.debug('admin already exists');
+                        console.debug(admin);
+                        //   return admin;
+                    }
+                    ////////////////////
+                    
+                    
+                   
                     
                 },
                 no:function(){
@@ -432,13 +492,43 @@ $(document).ready(function() {
             StackMob.isLoggedIn({
                 yes:function(username){
                     console.log(username+" :is logged in");
-                     ar.getUser(username);
+                   //  ar.getUser(username);
                     //get user and navigate to home
                   //  majokosiAdminApp.navigate('/home',true)
                     //ar.navigate('/home',true)
-                    if(!mainView) mainView = new MainView({model:admin});
-                    ar.brm.showView(mainView);// user model to be passed into the constructor
-                    mainView.goCats();
+                     ////////////////////
+                    if (!admin) {
+                        //console.debug('getUser:about to fetch user');
+                        var user = new StackMob.User({
+                            username: username
+                        });
+                        //console.debug('getUser:fetching user');
+                        user.fetch({
+                            success: function() {
+                                admin = user;
+                                console.debug('user fetched');
+                                console.debug(user);
+                    
+                                if (!mainView) mainView = new MainView({
+                                    model: admin
+                                });
+                                ar.brm.showView(mainView); // user model to be passed into the constructor
+                                mainView.goCats();
+                            },
+                            error: function() {
+                                console.debug('user  fetch error');
+                            }
+                        });
+                        // return user;
+                    }
+                    else {
+                        console.debug('admin already exists');
+                        console.debug(admin);
+                        //   return admin;
+                    }
+                    ////////////////////
+                     //user model to be passed into the constructor
+                    
                     
                 },
                 no:function(){
@@ -458,13 +548,43 @@ $(document).ready(function() {
             StackMob.isLoggedIn({
                 yes:function(username){
                     console.log(username+" :is logged in");
-                     ar.getUser(username);
+                    // ar.getUser(username);
                     //get user and navigate to home
                   //  majokosiAdminApp.navigate('/home',true)
                     //ar.navigate('/home',true)
-                    if(!mainView) mainView = new MainView({model:admin});
-                    ar.brm.showView(mainView);// user model to be passed into the constructor
-                    mainView.goJokes();
+                     // user model to be passed into the constructor
+                      ////////////////////
+                    if (!admin) {
+                        //console.debug('getUser:about to fetch user');
+                        var user = new StackMob.User({
+                            username: username
+                        });
+                        //console.debug('getUser:fetching user');
+                        user.fetch({
+                            success: function() {
+                                admin = user;
+                                console.debug('user fetched');
+                                console.debug(user);
+                    
+                                if (!mainView) mainView = new MainView({
+                                    model: admin
+                                });
+                                ar.brm.showView(mainView); // user model to be passed into the constructor
+                                mainView.goJokes();
+                            },
+                            error: function() {
+                                console.debug('user  fetch error');
+                            }
+                        });
+                        // return user;
+                    }
+                    else {
+                        console.debug('admin already exists');
+                        console.debug(admin);
+                        //   return admin;
+                    }
+                    ////////////////////
+                    
                     
                 },
                 no:function(){
@@ -483,13 +603,43 @@ $(document).ready(function() {
             StackMob.isLoggedIn({
                 yes:function(username){
                     console.log(username+" :is logged in");
-                     ar.getUser(username);
+                    // ar.getUser(username);
                     //get user and navigate to home
                   //  majokosiAdminApp.navigate('/home',true)
                     //ar.navigate('/home',true)
-                    if(!mainView) mainView = new MainView({model:admin});
-                    ar.brm.showView(mainView);// user model to be passed into the constructor
-                   mainView.goUsers();
+                     ////////////////////
+                    if (!admin) {
+                        //console.debug('getUser:about to fetch user');
+                        var user = new StackMob.User({
+                            username: username
+                        });
+                        //console.debug('getUser:fetching user');
+                        user.fetch({
+                            success: function() {
+                                admin = user;
+                                console.debug('user fetched');
+                                console.debug(user);
+                    
+                                if (!mainView) mainView = new MainView({
+                                    model: admin
+                                });
+                                ar.brm.showView(mainView); // user model to be passed into the constructor
+                                mainView.goUsers();
+                            },
+                            error: function() {
+                                console.debug('user  fetch error');
+                            }
+                        });
+                        // return user;
+                    }
+                    else {
+                        console.debug('admin already exists');
+                        console.debug(admin);
+                        //   return admin;
+                    }
+                    ////////////////////
+                    // user model to be passed into the constructor
+                   
                     
                 },
                 no:function(){
