@@ -369,16 +369,101 @@ $(document).ready(function() {
             
         },
         toStats:function(){
-             mainView.goStats();
+             
+             console.debug('tostats function :routing to stats view');
+            ar = this;
+            StackMob.isLoggedIn({
+                yes:function(username){
+                    console.log(username+" :is logged in");
+                    //get user and navigate to home
+                  //  majokosiAdminApp.navigate('/home',true)
+                    //ar.navigate('/home',true)
+                    if(!mainView) mainView = new MainView();
+                    ar.brm.showView(mainView);// user model to be passed into the constructor
+                   mainView.goStats();
+                    
+                },
+                no:function(){
+                    console.log("no user logged in");
+                   ar.brm.showView(new LoginView());
+                }/*,
+                error:function(){
+                    console.log("error");
+                }*/
+            });
         },
         toCats:function(){
-             mainView.goCats();
+             
+              console.debug('tocats function :routing to catsview');
+            ar = this;
+            StackMob.isLoggedIn({
+                yes:function(username){
+                    console.log(username+" :is logged in");
+                    //get user and navigate to home
+                  //  majokosiAdminApp.navigate('/home',true)
+                    //ar.navigate('/home',true)
+                    if(!mainView) mainView = new MainView();
+                    ar.brm.showView(mainView);// user model to be passed into the constructor
+                    mainView.goCats();
+                    
+                },
+                no:function(){
+                    console.log("no user logged in");
+                   ar.brm.showView(new LoginView());
+                }/*,
+                error:function(){
+                    console.log("error");
+                }*/
+            });
+             
         },
         toJokes:function(){
-             mainView.goJokes();
+            
+              console.debug('tojokes function :routing to jokes view');
+            ar = this;
+            StackMob.isLoggedIn({
+                yes:function(username){
+                    console.log(username+" :is logged in");
+                    //get user and navigate to home
+                  //  majokosiAdminApp.navigate('/home',true)
+                    //ar.navigate('/home',true)
+                    if(!mainView) mainView = new MainView();
+                    ar.brm.showView(mainView);// user model to be passed into the constructor
+                    mainView.goJokes();
+                    
+                },
+                no:function(){
+                    console.log("no user logged in");
+                   ar.brm.showView(new LoginView());
+                }/*,
+                error:function(){
+                    console.log("error");
+                }*/
+            });
         },
         toUsers:function(){
-             mainView.goUsers();
+             
+              console.debug('to users function :routing to users view');
+            ar = this;
+            StackMob.isLoggedIn({
+                yes:function(username){
+                    console.log(username+" :is logged in");
+                    //get user and navigate to home
+                  //  majokosiAdminApp.navigate('/home',true)
+                    //ar.navigate('/home',true)
+                    if(!mainView) mainView = new MainView();
+                    ar.brm.showView(mainView);// user model to be passed into the constructor
+                   mainView.goUsers();
+                    
+                },
+                no:function(){
+                    console.log("no user logged in");
+                   ar.brm.showView(new LoginView());
+                }/*,
+                error:function(){
+                    console.log("error");
+                }*/
+            });
         },
         toProblem:function(){
             console.debug('problem route fired');
