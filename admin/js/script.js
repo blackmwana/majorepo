@@ -199,7 +199,7 @@ $(document).ready(function() {
 
         },
         initialize: function() {
-            this.template= _.template($('item-cats').html());
+            this.template= _.template($('#item-cats').html());
         },
         render: function() {
             var el=this.$el;
@@ -215,7 +215,7 @@ $(document).ready(function() {
 
         },
         initialize: function() {
-            this.template= _.template($('item-users').html());
+            this.template= _.template($('#item-users').html());
         },
         render: function() {
             var el=this.$el;
@@ -232,7 +232,7 @@ $(document).ready(function() {
 
         },
         initialize: function() {
-            this.template= _.template($('item-jokes').html());
+            this.template= _.template($('#item-jokes').html());
         },
         render: function() {
             var el=this.$el;
@@ -249,7 +249,7 @@ $(document).ready(function() {
 
         },
         initialize: function() {
-            this.template= _.template($('item-stats').html());
+            this.template= _.template($('#item-stats').html());
         },
         render: function() {
             var el = this.$el;
