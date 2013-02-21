@@ -300,6 +300,7 @@ $(document).ready(function() {
                 if (this.currentView) {
                     this.currentView.close();
                 }
+                else $('body').empty()
                 this.currentView = view;
                 //this.currentView.render();
                 //$("body").html(this.currentView.render().el);
