@@ -127,8 +127,8 @@ $(document).ready(function() {
             console.debug('show sidebar');
         },
         navHome:function(){
-            //majokosiAdminApp.navigate('/home',true);
-            majokosiAdminApp.navigate('/',true);
+            majokosiAdminApp.navigate('/home',true);
+           // majokosiAdminApp.navigate('/',true);
         },
         goHome: function(){
             console.debug('going home, showing homeview');
