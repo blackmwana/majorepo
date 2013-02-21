@@ -1616,3 +1616,12 @@
 {"ts":1361475629002,"patch":[[{"diffs":[[0,"is logged in\");\n"],[1,"                     ar.getUser(username);\n"],[0,"                "]],"start1":14906,"start2":14906,"length1":32,"length2":75}]],"length":16823,"saved":false}
 {"ts":1361475632174,"patch":[[{"diffs":[[0,"is logged in\");\n"],[1,"                     ar.getUser(username);\n"],[0,"                "]],"start1":15900,"start2":15900,"length1":32,"length2":75}]],"length":16866,"saved":false}
 {"ts":1361475734722,"patch":[[{"diffs":[[0," = Stack"],[-1,"m"],[1,"M"],[0,"ob.User("]],"start1":10357,"start2":10357,"length1":17,"length2":17}]],"length":16866,"saved":false}
+{"ts":1361475874930,"patch":[[{"diffs":[[0,"ction(){"],[1,"\n                    "],[0,"admin=us"]],"start1":10444,"start2":10444,"length1":16,"length2":37}]],"length":16887,"saved":false}
+{"ts":1361475888275,"patch":[[{"diffs":[[0,"ame:name});\n"],[1,"            \n"],[0,"            "]],"start1":10380,"start2":10380,"length1":24,"length2":37}]],"length":16900,"saved":false}
+{"ts":1361475891595,"patch":[[{"diffs":[[0,"});\n            "],[1,"console.de"],[0,"\n            use"]],"start1":10388,"start2":10388,"length1":32,"length2":42}]],"length":16910,"saved":false}
+{"ts":1361475893549,"patch":[[{"diffs":[[0,"nsole.de"],[1,"bug()"],[0,"\n       "]],"start1":10406,"start2":10406,"length1":16,"length2":21}]],"length":16915,"saved":false}
+{"ts":1361475896485,"patch":[[{"diffs":[[0,"e.debug("],[1,"'fetc'"],[0,")\n      "]],"start1":10410,"start2":10410,"length1":16,"length2":22}]],"length":16921,"saved":false}
+{"ts":1361475899558,"patch":[[{"diffs":[[0,"ug('fetc"],[1,"hing user"],[0,"')\n     "]],"start1":10415,"start2":10415,"length1":16,"length2":25}]],"length":16930,"saved":false}
+{"ts":1361475903782,"patch":[[{"diffs":[[0,".debug('"],[1,"getUs"],[0,"fetching"]],"start1":10411,"start2":10411,"length1":16,"length2":21}]],"length":16935,"saved":false}
+{"ts":1361475906975,"patch":[[{"diffs":[[0,"g('getUs"],[1,"er:"],[0,"fetching"]],"start1":10416,"start2":10416,"length1":16,"length2":19}]],"length":16938,"saved":false}
+{"ts":1361475909988,"patch":[[{"diffs":[[0,"g user')"],[1,";"],[0,"\n       "]],"start1":10434,"start2":10434,"length1":16,"length2":17}]],"length":16939,"saved":false}

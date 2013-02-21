@@ -327,8 +327,10 @@ $(document).ready(function() {
         getUser:function(name){
             if(!admin){
             var user = StackMob.User({username:name});
+            console.debug('getUser:fetching user');
             user.fetch({
-                success:function(){admin=user;
+                success:function(){
+                    admin=user;
                 console.debug('user fetched');
                 console.debug(user);
                 },
