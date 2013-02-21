@@ -43,6 +43,9 @@ h1:hover{
     top:1.5em;
     left:7.5em;
 }
+#header-icons a{
+    cursor:hand
+}
 #home-content{
     /*width:50em;*/
     border: solid 1px black;

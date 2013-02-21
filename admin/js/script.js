@@ -1,7 +1,6 @@
 //author= blackmwana
-$(document).ready(function() {
-    //http://lostechies.com/derickbailey/2011/09/15/zombies-run-managing-page-transitions-in-backbone-apps/
-    Backbone.View.prototype.close = function() {
+Backbone.View.prototype.close = function() {
+        //http://lostechies.com/derickbailey/2011/09/15/zombies-run-managing-page-transitions-in-backbone-apps/
         console.log(this.localName);
         console.log(this);
         if (this.el.tagName.toLowerCase() === 'body') {
@@ -18,6 +17,21 @@ $(document).ready(function() {
         }
     }
     //////////////////
+$(document).ready(function() {
+    
+    
+    var curAdmin;
+    var cats;
+    var mainView;
+     if(!curAdmin)alert ('curadmin not set');
+    var Cat = StackMob.Model.extend({
+        schemaName:'cat'
+    });
+    var Cats = StackMob.Collection.extend({
+        model:Cat
+    });
+   
+    
     var LoginView = Backbone.View.extend({
         el: 'body',
         events: {
@@ -32,14 +46,14 @@ $(document).ready(function() {
         },
         render: function() {
             var el = this.$el;
-            el.empty();
+         //   el.empty();
             el.append(this.template());
             return this;
         },
         onEnter: function(e) {
             console.debug(e.keyCode);
             if (e.keyCode == 13) {
-                if ($('#username').val().replace(/\W/g, '') === '') $('#sername').focus();
+                if ($('#username').val().replace(/\W/g, '') === '') $('#username').focus();
                 else if ($('#pass').val().replace(/\W/g, '') === '') $('#pass').focus();
                 else this.validate();
             }
@@ -61,7 +75,8 @@ $(document).ready(function() {
             user.login(false, {
                 success: function(model) {
                     // redirect user to a new page
-                    console.debug(model);
+                    console.debug(model);//assign this to user object
+                    
                     console.debug(' navigating to main view');
                     majokosiAdminApp.navigate('/home',true);
                 },
@@ -69,6 +84,7 @@ $(document).ready(function() {
                     console.debug(response);
                 }
             });
+            console.debug(user);
         },
         loginError: function() {
             console.debug('login error function called');
@@ -79,8 +95,8 @@ $(document).ready(function() {
         el: 'body',
         events: {
             "click #menu-btn":"showSidebar",
-            "click #home-btn":"goHome",
-            "click.user-login":"showUserDialogue"
+            "click #home-btn":"navHome",
+            "click .user-login":"showUserDialogue"
         },
         initialize: function() {
             this.template=_.template($('#item-main').html());
@@ -89,16 +105,19 @@ $(document).ready(function() {
         },
         render: function() {
             var el= this.$el;
-            el.empty();
+        //    el.empty();
             el.append(this.template());
             //removing this next part to implement region managers
             //this.homeView = new HomeView();
         //    $('.view-container').append(this.homeView.render().el);
-            this.goHome();
+          //  this.goHome();
             return this;
         },
         showSidebar:function(){
             console.debug('show sidebar');
+        },
+        navHome:function(){
+            majokosiAdminApp.navigate('/home',true);
         },
         goHome: function(){
             console.debug('going home, showing homeview');
@@ -106,26 +125,66 @@ $(document).ready(function() {
            // majokosiAdminApp.navigate('/home',true);
            majokosiAdminApp.prm.showView(this.homeView);
         },
+         goCats: function(){
+            console.debug('going cats, showing catsview');
+            this.catsView = new CatsView();
+           // majokosiAdminApp.navigate('/home',true);
+           majokosiAdminApp.prm.showView(this.catsview);
+        },
+         goUsers: function(){
+            console.debug('going users, showing usersview');
+            this.usersView = new UsersView();
+           // majokosiAdminApp.navigate('/home',true);
+           majokosiAdminApp.prm.showView(this.usersView);
+        },
+         goJokes: function(){
+            console.debug('going jokes, showing jokesview');
+            this.jokesView = new JokesView();
+           // majokosiAdminApp.navigate('/home',true);
+           majokosiAdminApp.prm.showView(this.jokesView);
+        },
+         goStats: function(){
+            console.debug('going stats, showing statsview');
+            this.statsView = new StatsView();
+           // majokosiAdminApp.navigate('/home',true);
+           majokosiAdminApp.prm.showView(this.statsView);
+        },
         showUserDialogue:function(){
-            
+            console.debug('user dialog');
         }
     });
-     var HomeView = Backbone.View.extend({
+    var HomeView = Backbone.View.extend({
         /*el: '',*/
         id:"home-content",
         className:"page-region-content tiles", 
         events: {
-
+            'click #cats-pane': 'goToCats',
+            'click #stats-pane': 'goToStats',
+            'click #jokes-pane': 'goToJokes',
+            'click #users-pane': 'goToUsers'
         },
         initialize: function() {
             this.template=_.template($('#item-home').html());
         },
         render: function() {
             var el=this.$el;
-            $('.page-region-content').remove();
+          //  $('.page-region-content').remove();
             el.append(this.template());
          
             return this;
+        },
+        goToUsers:function(){
+            //navigate
+             majokosiAdminApp.navigate('/users',true);
+        },
+        goToCats:function(){
+             majokosiAdminApp.navigate('/categories',true);
+        },
+        goToJokes:function(){
+             majokosiAdminApp.navigate('/jokes',true);
+        },
+        goToStats:function(){
+             majokosiAdminApp.navigate('/statistics',true);
         }
     });
      var CatsView = Backbone.View.extend({
@@ -136,37 +195,78 @@ $(document).ready(function() {
 
         },
         initialize: function() {
-
+            this.template= _.template($('item-cats').html());
         },
         render: function() {
+            var el=this.$el;
+          //  $('.page-region-content').remove();
+            el.append(this.template());
+            return this;
+        }
+    });
+    var UsersView = Backbone.View.extend({
+        id:"user-content",
+        className:"page-region-content ",
+        events: {
+
+        },
+        initialize: function() {
+            this.template= _.template($('item-users').html());
+        },
+        render: function() {
+            var el=this.$el;
+          //  $('.page-region-content').remove();
+            el.append(this.template());
             return this;
         }
     });
     var JokesView = Backbone.View.extend({
-        el: '',
+                //el: '',
+        id:"joke-content",
+        className:"page-region-content ",
         events: {
 
         },
         initialize: function() {
-
+            this.template= _.template($('item-jokes').html());
         },
         render: function() {
+            var el=this.$el;
+        //    $('.page-region-content').remove();
+            el.append(this.template());
             return this;
         }
     });
     var StatsView = Backbone.View.extend({
-        el: '',
+            //el: '',
+        id:"stat-content",
+        className:"page-region-content ",
         events: {
 
         },
         initialize: function() {
-
+            this.template= _.template($('item-stats').html());
         },
         render: function() {
+            var el = this.$el;
+           // $('.page-region-content').remove();
+            el.append(this.template());
             return this;
         }
     });
     var SidebarView= Backbone.View.extend({
+        el:'',
+        events:{
+            
+        },
+        initialize:function(){
+            
+        },
+        render:function(){
+            
+        }
+    });
+    var NavBarView = Backbone.View.extend({
         el:'',
         events:{
             
@@ -190,21 +290,29 @@ $(document).ready(function() {
         }
 
     }
-    function BodyRegionManager(){//for body top level views
+    function BodyRegionManager() { //for body top level views
         this.showView = function(view) {
-            if(this.currentView) {
-                this.currentView.close();
+            if (this.currentView !== view) {
+                if (this.currentView) {
+                    this.currentView.close();
+                }
+                this.currentView = view;
+                //this.currentView.render();
+                //$("body").html(this.currentView.render().el);
+                this.currentView.render();
             }
-            this.currentView = view;
-            //this.currentView.render();
-            //$("body").html(this.currentView.render().el);
-            this.currentView.render();
+            else console.debug('cant close and open the same view');
+    
         }
     }
     var AppRouter = Backbone.Router.extend({
         routes:{
             '':'login',
-            'home':'main'
+            'home':'main',
+            'statistics':'stats',
+            'categories':'cats',
+            'users':'users',
+            'jokes':'jokes'
         },
         initialize:function(){
             this.prm = new PageRegionManager();
@@ -240,7 +348,10 @@ $(document).ready(function() {
                     //get user and navigate to home
                   //  majokosiAdminApp.navigate('/home',true)
                     //ar.navigate('/home',true)
-                    ar.brm.showView(new MainView());// user model to be passed into the constructor
+                    if(!mainView) mainView = new MainView();
+                    ar.brm.showView(mainView);// user model to be passed into the constructor
+                    mainView.goHome();
+                    
                 },
                 no:function(){
                     console.log("no user logged in");
@@ -250,6 +361,18 @@ $(document).ready(function() {
                     console.log("error");
                 }*/
             });
+            
+        },
+        showStats:function(){
+            
+        },
+        showCats:function(){
+            
+        },
+        showJokes:function(){
+            
+        },
+        showUsers:function(){
             
         }
     });
