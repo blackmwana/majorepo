@@ -36,7 +36,7 @@ $(document).ready(function() {
         el: 'body',
         events: {
             "click #login-btn": "validate",
-            //"click #problems-btn":"problem",
+            "click #problems-btn":"problem",
             "keypress #username": "onEnter",
             "keypress #pass": "onEnter"
         },
@@ -88,6 +88,10 @@ $(document).ready(function() {
         },
         loginError: function() {
             console.debug('login error function called');
+        },
+        problem:function(){
+            console.debug('having problems');//problemview on body
+            majokosiAdminApp.navigate('/problem',true);
         }
     });
 
@@ -309,10 +313,11 @@ $(document).ready(function() {
         routes:{
             '':'login',
             'home':'main',
-            'statistics':'stats',
-            'categories':'cats',
-            'users':'users',
-            'jokes':'jokes'
+            'statistics':'toStats',
+            'categories':'toCats',
+            'users':'toUsers',
+            'jokes':'toJokes',
+            'problem':'toProblem'
         },
         initialize:function(){
             this.prm = new PageRegionManager();
@@ -374,6 +379,9 @@ $(document).ready(function() {
         },
         showUsers:function(){
              mainView.goUsers();
+        },
+        toProblem:function(){
+            console.debug('problem route fired');
         }
     });
 majokosiAdminApp = new AppRouter();
