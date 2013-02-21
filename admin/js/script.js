@@ -364,16 +364,16 @@ $(document).ready(function() {
             
         },
         showStats:function(){
-            
+             mainView.goStats();
         },
         showCats:function(){
-            
+             mainView.goCats();
         },
         showJokes:function(){
-            
+             mainView.goJokes();
         },
         showUsers:function(){
-            
+             mainView.goUsers();
         }
     });
 majokosiAdminApp = new AppRouter();
