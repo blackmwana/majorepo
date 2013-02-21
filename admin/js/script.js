@@ -410,6 +410,11 @@ $(document).ready(function() {
                     else {
                         console.debug('admin already exists');
                         console.debug(admin);
+                        if (!mainView) mainView = new MainView({
+                                    model: admin
+                                });
+                                ar.brm.showView(mainView); // user model to be passed into the constructor
+                                mainView.goHome();
                         //   return admin;
                     }
                     ////////////////////
@@ -468,6 +473,11 @@ $(document).ready(function() {
                     else {
                         console.debug('admin already exists');
                         console.debug(admin);
+                        if (!mainView) mainView = new MainView({
+                                    model: admin
+                                });
+                                ar.brm.showView(mainView); // user model to be passed into the constructor
+                                mainView.goStats();
                         //   return admin;
                     }
                     ////////////////////
@@ -524,6 +534,11 @@ $(document).ready(function() {
                     else {
                         console.debug('admin already exists');
                         console.debug(admin);
+                         if (!mainView) mainView = new MainView({
+                                    model: admin
+                                });
+                                ar.brm.showView(mainView); // user model to be passed into the constructor
+                                mainView.goCats();
                         //   return admin;
                     }
                     ////////////////////
@@ -581,6 +596,11 @@ $(document).ready(function() {
                     else {
                         console.debug('admin already exists');
                         console.debug(admin);
+                         if (!mainView) mainView = new MainView({
+                                    model: admin
+                                });
+                                ar.brm.showView(mainView); // user model to be passed into the constructor
+                                mainView.goJokes();
                         //   return admin;
                     }
                     ////////////////////
@@ -635,6 +655,11 @@ $(document).ready(function() {
                     else {
                         console.debug('admin already exists');
                         console.debug(admin);
+                        if (!mainView) mainView = new MainView({
+                                    model: admin
+                                });
+                                ar.brm.showView(mainView); // user model to be passed into the constructor
+                                mainView.goUsers();
                         //   return admin;
                     }
                     ////////////////////
