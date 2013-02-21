@@ -1485,3 +1485,4 @@
 {"ts":1361454738038,"patch":[[{"diffs":[[0,"template($('"],[1,"#"],[0,"item-jokes')"]],"start1":7770,"start2":7770,"length1":24,"length2":25}]],"length":15975,"saved":false}
 {"ts":1361454741029,"patch":[[{"diffs":[[0,"template($('"],[1,"#"],[0,"item-users')"]],"start1":7304,"start2":7304,"length1":24,"length2":25}]],"length":15976,"saved":false}
 {"ts":1361454746244,"patch":[[{"diffs":[[0,"late($('"],[1,"#"],[0,"item-cat"]],"start1":6869,"start2":6869,"length1":16,"length2":17}]],"length":15977,"saved":false}
+{"ts":1361454919996,"patch":[[{"diffs":[[0,"his.cats"],[-1,"v"],[1,"V"],[0,"iew);\n  "]],"start1":4668,"start2":4668,"length1":17,"length2":17}]],"length":15977,"saved":false}

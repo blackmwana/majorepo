@@ -133,7 +133,7 @@ $(document).ready(function() {
             console.debug('going cats, showing catsview');
             this.catsView = new CatsView();
            // majokosiAdminApp.navigate('/home',true);
-           majokosiAdminApp.prm.showView(this.catsview);
+           majokosiAdminApp.prm.showView(this.catsView);
         },
          goUsers: function(){
             console.debug('going users, showing usersview');
