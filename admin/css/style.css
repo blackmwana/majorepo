@@ -44,7 +44,7 @@ h1:hover{
     left:7.5em;
 }
 #header-icons a{
-    cursor:hand
+    cursor:pointer;
 }
 #home-content{
     /*width:50em;*/
