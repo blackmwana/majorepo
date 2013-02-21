@@ -385,7 +385,7 @@ $(document).ready(function() {
                     //get user and navigate to home
                   //  majokosiAdminApp.navigate('/home',true)
                     //ar.navigate('/home',true)
-                    if(!mainView) mainView = new MainView();
+                    if(!mainView) mainView = new MainView({model:admin});
                     ar.brm.showView(mainView);// user model to be passed into the constructor
                     mainView.goHome();
                     
@@ -411,7 +411,7 @@ $(document).ready(function() {
                     //get user and navigate to home
                   //  majokosiAdminApp.navigate('/home',true)
                     //ar.navigate('/home',true)
-                    if(!mainView) mainView = new MainView();
+                    if(!mainView) mainView = new MainView({model:admin});
                     ar.brm.showView(mainView);// user model to be passed into the constructor
                    mainView.goStats();
                     
@@ -436,7 +436,7 @@ $(document).ready(function() {
                     //get user and navigate to home
                   //  majokosiAdminApp.navigate('/home',true)
                     //ar.navigate('/home',true)
-                    if(!mainView) mainView = new MainView();
+                    if(!mainView) mainView = new MainView({model:admin});
                     ar.brm.showView(mainView);// user model to be passed into the constructor
                     mainView.goCats();
                     
@@ -462,7 +462,7 @@ $(document).ready(function() {
                     //get user and navigate to home
                   //  majokosiAdminApp.navigate('/home',true)
                     //ar.navigate('/home',true)
-                    if(!mainView) mainView = new MainView();
+                    if(!mainView) mainView = new MainView({model:admin});
                     ar.brm.showView(mainView);// user model to be passed into the constructor
                     mainView.goJokes();
                     
@@ -487,7 +487,7 @@ $(document).ready(function() {
                     //get user and navigate to home
                   //  majokosiAdminApp.navigate('/home',true)
                     //ar.navigate('/home',true)
-                    if(!mainView) mainView = new MainView();
+                    if(!mainView) mainView = new MainView({model:admin});
                     ar.brm.showView(mainView);// user model to be passed into the constructor
                    mainView.goUsers();
                     
