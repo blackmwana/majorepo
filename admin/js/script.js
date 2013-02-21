@@ -326,7 +326,7 @@ $(document).ready(function() {
         },
         getUser:function(name){
             if(!admin){
-            var user = Stackmob.User({username:name});
+            var user = StackMob.User({username:name});
             user.fetch({
                 success:function(){admin=user;
                 console.debug('user fetched');

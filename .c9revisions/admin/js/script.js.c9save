@@ -1615,3 +1615,4 @@
 {"ts":1361475623616,"patch":[[{"diffs":[[0,"is logged in\");\n"],[1,"                     ar.getUser(username);\n"],[0,"                "]],"start1":13901,"start2":13901,"length1":32,"length2":75}]],"length":16780,"saved":false}
 {"ts":1361475629002,"patch":[[{"diffs":[[0,"is logged in\");\n"],[1,"                     ar.getUser(username);\n"],[0,"                "]],"start1":14906,"start2":14906,"length1":32,"length2":75}]],"length":16823,"saved":false}
 {"ts":1361475632174,"patch":[[{"diffs":[[0,"is logged in\");\n"],[1,"                     ar.getUser(username);\n"],[0,"                "]],"start1":15900,"start2":15900,"length1":32,"length2":75}]],"length":16866,"saved":false}
+{"ts":1361475734722,"patch":[[{"diffs":[[0," = Stack"],[-1,"m"],[1,"M"],[0,"ob.User("]],"start1":10357,"start2":10357,"length1":17,"length2":17}]],"length":16866,"saved":false}
