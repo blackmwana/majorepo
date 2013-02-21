@@ -75,6 +75,7 @@ $(document).ready(function() {
             user.login(false, {
                 success: function(model) {
                     // redirect user to a new page
+                    //admin=model;//because its not the same as StackMob.Model
                     console.debug(model);//assign this to user object
                     
                     console.debug(' navigating to main view');
@@ -103,6 +104,8 @@ $(document).ready(function() {
             "click .user-login":"showUserDialogue"
         },
         initialize: function() {
+            this.model= this.options.model;
+            this.model.bind('all', this.refresh,this);
             this.template=_.template($('#item-main').html());
             //this.render();//rendering in this.brm 
 
@@ -110,18 +113,22 @@ $(document).ready(function() {
         render: function() {
             var el= this.$el;
         //    el.empty();
-            el.append(this.template());
+            el.append(this.template(this.model.toJSON()));
             //removing this next part to implement region managers
             //this.homeView = new HomeView();
         //    $('.view-container').append(this.homeView.render().el);
           //  this.goHome();
             return this;
         },
+        refresh:function(){
+            majokosiAdminApp.navigate('/',true);
+        },
         showSidebar:function(){
             console.debug('show sidebar');
         },
         navHome:function(){
-            majokosiAdminApp.navigate('/home',true);
+            //majokosiAdminApp.navigate('/home',true);
+            majokosiAdminApp.navigate('/',true);
         },
         goHome: function(){
             console.debug('going home, showing homeview');
