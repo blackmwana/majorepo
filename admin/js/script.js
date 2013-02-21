@@ -296,7 +296,7 @@ $(document).ready(function() {
     }
     function BodyRegionManager() { //for body top level views
         this.showView = function(view) {
-            if (this.currentView !== view && $('body').html()!=='') {
+            if (this.currentView !== view || $('body').html()==='') {
                 if (this.currentView) {
                     this.currentView.close();
                 }
