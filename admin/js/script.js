@@ -20,7 +20,7 @@ Backbone.View.prototype.close = function() {
 $(document).ready(function() {
     
     
-    var admin={};
+    var admin;
     var cats;
     var mainView;
     // if(!curAdmin)alert ('curadmin not set');
@@ -324,6 +324,26 @@ $(document).ready(function() {
             this.prm = new PageRegionManager();
             this.brm = new BodyRegionManager();
         },
+        getUser:function(name){
+            if(!admin){
+            var user = Stackmob.User({username:name});
+            user.fetch({
+                success:function(){admin=user;
+                console.debug('user fetched');
+                console.debug(user);
+                },
+                error:function(){
+                    console.debug('user  fetch error');
+                }
+            });
+           // return user;
+            }
+            else {
+                console.debug('admin already exists');
+                console.debug(admin);
+             //   return admin;
+                }
+        },
         login:function(){
             console.log("login route");
             $('body').empty();
@@ -332,7 +352,7 @@ $(document).ready(function() {
                 yes:function(username){
                     console.log(username+" :is logged in");
                     //get user and navigate to home
-                  //  majokosiAdminApp.navigate('/home',true)
+                    ar.getUser(username);
                     ar.navigate('/home',true)
                 },
                 no:function(){
@@ -351,6 +371,7 @@ $(document).ready(function() {
             StackMob.isLoggedIn({
                 yes:function(username){
                     console.log(username+" :is logged in");
+                    ar.getUser(username);
                     //get user and navigate to home
                   //  majokosiAdminApp.navigate('/home',true)
                     //ar.navigate('/home',true)
@@ -376,6 +397,7 @@ $(document).ready(function() {
             StackMob.isLoggedIn({
                 yes:function(username){
                     console.log(username+" :is logged in");
+                     ar.getUser(username);
                     //get user and navigate to home
                   //  majokosiAdminApp.navigate('/home',true)
                     //ar.navigate('/home',true)
@@ -400,6 +422,7 @@ $(document).ready(function() {
             StackMob.isLoggedIn({
                 yes:function(username){
                     console.log(username+" :is logged in");
+                     ar.getUser(username);
                     //get user and navigate to home
                   //  majokosiAdminApp.navigate('/home',true)
                     //ar.navigate('/home',true)
@@ -425,6 +448,7 @@ $(document).ready(function() {
             StackMob.isLoggedIn({
                 yes:function(username){
                     console.log(username+" :is logged in");
+                     ar.getUser(username);
                     //get user and navigate to home
                   //  majokosiAdminApp.navigate('/home',true)
                     //ar.navigate('/home',true)
@@ -449,6 +473,7 @@ $(document).ready(function() {
             StackMob.isLoggedIn({
                 yes:function(username){
                     console.log(username+" :is logged in");
+                     ar.getUser(username);
                     //get user and navigate to home
                   //  majokosiAdminApp.navigate('/home',true)
                     //ar.navigate('/home',true)
