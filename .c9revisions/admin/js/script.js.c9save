@@ -1486,3 +1486,13 @@
 {"ts":1361454741029,"patch":[[{"diffs":[[0,"template($('"],[1,"#"],[0,"item-users')"]],"start1":7304,"start2":7304,"length1":24,"length2":25}]],"length":15976,"saved":false}
 {"ts":1361454746244,"patch":[[{"diffs":[[0,"late($('"],[1,"#"],[0,"item-cat"]],"start1":6869,"start2":6869,"length1":16,"length2":17}]],"length":15977,"saved":false}
 {"ts":1361454919996,"patch":[[{"diffs":[[0,"his.cats"],[-1,"v"],[1,"V"],[0,"iew);\n  "]],"start1":4668,"start2":4668,"length1":17,"length2":17}]],"length":15977,"saved":false}
+{"ts":1361456216977,"patch":[[{"diffs":[[0,"iew !== view"],[1," "],[0,") {\n        "]],"start1":9364,"start2":9364,"length1":24,"length2":25}]],"length":15978,"saved":false}
+{"ts":1361456220012,"patch":[[{"diffs":[[0,"== view "],[1,"&&"],[0,") {\n    "]],"start1":9369,"start2":9369,"length1":16,"length2":18}]],"length":15980,"saved":false}
+{"ts":1361456224577,"patch":[[{"diffs":[[0," view &&"],[1," "],[0,") {\n    "]],"start1":9371,"start2":9371,"length1":16,"length2":17}]],"length":15981,"saved":false}
+{"ts":1361456227474,"patch":[[{"diffs":[[0,"view && "],[1,"$()"],[0,") {\n    "]],"start1":9372,"start2":9372,"length1":16,"length2":19}]],"length":15984,"saved":false}
+{"ts":1361456229246,"patch":[[{"diffs":[[0,"ew && $("],[1,"'b'"],[0,")) {\n   "]],"start1":9374,"start2":9374,"length1":16,"length2":19}]],"length":15987,"saved":false}
+{"ts":1361456232247,"patch":[[{"diffs":[[0," && $('b"],[1,"ody"],[0,"')) {\n  "]],"start1":9376,"start2":9376,"length1":16,"length2":19}]],"length":15990,"saved":false}
+{"ts":1361456235705,"patch":[[{"diffs":[[0,"('body')"],[1,".html"],[0,") {\n    "]],"start1":9381,"start2":9381,"length1":16,"length2":21}]],"length":15995,"saved":false}
+{"ts":1361456242610,"patch":[[{"diffs":[[0,"y').html"],[1,"()"],[0,") {\n    "]],"start1":9386,"start2":9386,"length1":16,"length2":18}]],"length":15997,"saved":false}
+{"ts":1361456245738,"patch":[[{"diffs":[[0,").html()"],[1,"!=="],[0,") {\n    "]],"start1":9388,"start2":9388,"length1":16,"length2":19}]],"length":16000,"saved":false}
+{"ts":1361456248576,"patch":[[{"diffs":[[0,"tml()!=="],[1,"''"],[0,") {\n    "]],"start1":9391,"start2":9391,"length1":16,"length2":18}]],"length":16002,"saved":false}
