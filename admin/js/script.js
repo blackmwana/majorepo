@@ -23,7 +23,7 @@ $(document).ready(function() {
     var curAdmin;
     var cats;
     var mainView;
-     if(!curAdmin)alert ('curadmin not set');
+    // if(!curAdmin)alert ('curadmin not set');
     var Cat = StackMob.Model.extend({
         schemaName:'cat'
     });
