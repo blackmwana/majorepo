@@ -368,16 +368,16 @@ $(document).ready(function() {
             });
             
         },
-        showStats:function(){
+        toStats:function(){
              mainView.goStats();
         },
-        showCats:function(){
+        toCats:function(){
              mainView.goCats();
         },
-        showJokes:function(){
+        toJokes:function(){
              mainView.goJokes();
         },
-        showUsers:function(){
+        toUsers:function(){
              mainView.goUsers();
         },
         toProblem:function(){

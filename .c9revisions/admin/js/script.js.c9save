@@ -1448,3 +1448,10 @@
 {"ts":1361454113686,"patch":[[{"diffs":[[0,"vigate('"],[1,"/problem"],[0,"');\n    "]],"start1":3202,"start2":3202,"length1":16,"length2":24}]],"length":12456,"saved":false}
 {"ts":1361454116368,"patch":[[{"diffs":[[0,"problem'"],[1,","],[0,");\n     "]],"start1":3211,"start2":3211,"length1":16,"length2":17}]],"length":12457,"saved":false}
 {"ts":1361454119971,"patch":[[{"diffs":[[0,"roblem',"],[1,"true"],[0,");\n     "]],"start1":3212,"start2":3212,"length1":16,"length2":20}]],"length":12461,"saved":false}
+{"ts":1361454301400,"patch":[[{"diffs":[[0,"        "],[-1,"show"],[1,"t"],[0,"Stats:fu"]],"start1":11938,"start2":11938,"length1":20,"length2":17}]],"length":12458,"saved":false}
+{"ts":1361454305167,"patch":[[{"diffs":[[0,"       t"],[1,"o"],[0,"Stats:fu"]],"start1":11939,"start2":11939,"length1":16,"length2":17}]],"length":12459,"saved":false}
+{"ts":1361454308510,"patch":[[{"diffs":[[0,"        "],[-1,"show"],[0,"Cats:fun"]],"start1":12010,"start2":12010,"length1":20,"length2":16}]],"length":12455,"saved":false}
+{"ts":1361454312187,"patch":[[{"diffs":[[0,"        "],[1,"to"],[0,"Cats:fun"]],"start1":12010,"start2":12010,"length1":16,"length2":18},{"diffs":[[0,"     sho"],[-1,"w"],[0,"Jokes:fu"]],"start1":12083,"start2":12083,"length1":17,"length2":16}]],"length":12456,"saved":false}
+{"ts":1361454314990,"patch":[[{"diffs":[[0,"        "],[-1,"sh"],[1,"t"],[0,"oJokes:f"]],"start1":12080,"start2":12080,"length1":18,"length2":17}]],"length":12455,"saved":false}
+{"ts":1361454318484,"patch":[[{"diffs":[[0," },\n        "],[-1,"show"],[0,"Users:functi"]],"start1":12148,"start2":12148,"length1":28,"length2":24}]],"length":12451,"saved":false}
+{"ts":1361454321273,"patch":[[{"diffs":[[0,"        "],[1,"to"],[0,"Users:fu"]],"start1":12152,"start2":12152,"length1":16,"length2":18}]],"length":12453,"saved":false}
