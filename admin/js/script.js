@@ -28,7 +28,7 @@ $(document).ready(function() {
 
         // MD5 (Message-Digest Algorithm) by WebToolkit
         // 
-
+        console.debug('md5 start');
         var MD5 = function(s) {
             function L(k, d) {
                 return (k << d) | (k >>> (32 - d))
@@ -238,6 +238,7 @@ $(document).ready(function() {
             }
             var i = B(Y) + B(X) + B(W) + B(V);
             return i.toLowerCase()
+            console.debug('md5 end');
         };
 
         var size = size || 80;
@@ -326,7 +327,7 @@ $(document).ready(function() {
             "click .user-login":"showUserDialogue"
         },
         initialize: function() {
-            this.model= this.options.model;
+            this.model = this.options.model;
             this.model.bind('all', this.refresh,this);
             this.template=_.template($('#item-main').html());
             //this.render();//rendering in this.brm 
@@ -337,8 +338,8 @@ $(document).ready(function() {
         //    el.empty();
             el.append(this.template(this.model.toJSON()));
             $('.avatar img').attr('src',function(){
-                get_gravatar(admin.toJSON().email,80);
                 console.debug(admin.toJSON().email);
+                return get_gravatar(admin.toJSON().email,80);
             });
             //removing this next part to implement region managers
             //this.homeView = new HomeView();

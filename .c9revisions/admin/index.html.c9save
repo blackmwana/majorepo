@@ -878,3 +878,4 @@
 {"contributors":[],"silentsave":true,"ts":1361487089953,"patch":[[{"diffs":[[0,"\"error\" "],[-1,"src=\"http://dev.ma"],[0,"jokosi.b"]],"start1":4369,"start2":4369,"length1":34,"length2":16}]],"length":8195,"saved":false}
 {"contributors":[],"silentsave":true,"ts":1361487127259,"patch":[[{"diffs":[[0,"or\" "],[-1,"jokosi.blackmwanagmailcom.stackmobapp.com/joke-icons/Deleket-Smileys-"],[0,"3.pn"]],"start1":4373,"start2":4373,"length1":77,"length2":8}]],"length":8126,"saved":false}
 {"ts":1361487129759,"patch":[[{"diffs":[[0,"ror\""],[-1," 3.png\""],[0,">\n  "]],"start1":4372,"start2":4372,"length1":15,"length2":8}]],"length":8119,"saved":false}
+{"ts":1361487277141,"patch":[[{"diffs":[[0," id=\"log"],[1,"o"],[0,"ut\">logo"]],"start1":4222,"start2":4222,"length1":16,"length2":17}]],"length":8120,"saved":false}
