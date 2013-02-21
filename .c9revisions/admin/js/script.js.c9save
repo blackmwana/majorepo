@@ -1511,3 +1511,8 @@
 {"ts":1361464147550,"patch":[[{"diffs":[[0,"('body')"],[-1,"\n"],[0,".empty()"]],"start1":9531,"start2":9531,"length1":17,"length2":16}]],"length":16040,"saved":false}
 {"ts":1361464151396,"patch":[[{"diffs":[[0,".empty()"],[1,"\n"],[0,"        "]],"start1":9539,"start2":9539,"length1":16,"length2":17}]],"length":16041,"saved":false}
 {"contributors":[],"silentsave":true,"ts":1361466145530,"patch":[[{"diffs":[[0,".empty()"],[1,";"],[0,"\n       "]],"start1":9539,"start2":9539,"length1":16,"length2":17}]],"length":16042,"saved":false}
+{"contributors":[],"silentsave":true,"ts":1361473153383,"patch":[[{"diffs":[[0,"    var "],[-1,"curA"],[1,"a"],[0,"dmin;\n  "]],"start1":666,"start2":666,"length1":20,"length2":17}]],"length":16039,"saved":false}
+{"ts":1361473174570,"patch":[[{"diffs":[[0,"ar admin"],[1,"={"],[0,";\n    va"]],"start1":671,"start2":671,"length1":16,"length2":18}]],"length":16041,"saved":false}
+{"ts":1361473177924,"patch":[[{"diffs":[[0," admin={"],[1,"}"],[0,";\n    va"]],"start1":673,"start2":673,"length1":16,"length2":17}]],"length":16042,"saved":false}
+{"ts":1361473786586,"patch":[[{"diffs":[[0,"bug(user"],[1,".toJ"],[0,");\n     "]],"start1":2952,"start2":2952,"length1":16,"length2":20}]],"length":16046,"saved":false}
+{"ts":1361473791042,"patch":[[{"diffs":[[0,"user.toJ"],[1,"SON()"],[0,");\n     "]],"start1":2956,"start2":2956,"length1":16,"length2":21}]],"length":16051,"saved":false}

@@ -20,7 +20,7 @@ Backbone.View.prototype.close = function() {
 $(document).ready(function() {
     
     
-    var curAdmin;
+    var admin={};
     var cats;
     var mainView;
     // if(!curAdmin)alert ('curadmin not set');
@@ -84,7 +84,7 @@ $(document).ready(function() {
                     console.debug(response);
                 }
             });
-            console.debug(user);
+            console.debug(user.toJSON());
         },
         loginError: function() {
             console.debug('login error function called');
