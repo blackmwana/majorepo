@@ -1,7 +1,7 @@
 //author= blackmwana
 Backbone.View.prototype.close = function() {
         //http://lostechies.com/derickbailey/2011/09/15/zombies-run-managing-page-transitions-in-backbone-apps/
-        console.log(this.localName);
+        console.log(this.el.localName);
         console.log(this);
         if (this.el.tagName.toLowerCase() === 'body') {
             $('body').empty();
