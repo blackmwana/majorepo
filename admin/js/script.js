@@ -407,8 +407,9 @@ $(document).ready(function() {
             else {
                 console.debug('hiding sidebar');
                 this.sidebarVisible = false;
+                 $('.page').removeClass('with-sidebar');
                 $('.page-sidebar').animate({ width: "hide"}, 1000, "easeOutBounce",function(){
-                        $('.page').removeClass('with-sidebar');
+                       
                     }
                 );//animate
             }
