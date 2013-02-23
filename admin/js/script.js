@@ -343,7 +343,7 @@ $(document).ready(function() {
                 //maybe check to see if email exists
                 return get_gravatar(admin.toJSON().email,80);
             });
-            this.sidebarVisible==f
+            this.sidebarVisible=false;
             //removing this next part to implement region managers
             //this.homeView = new HomeView();
         //    $('.view-container').append(this.homeView.render().el);
@@ -401,7 +401,13 @@ $(document).ready(function() {
                     this.sideBarView = new SideBarView();
                     $('.page-sidebar').append(this.sideBarView.render().el);
                 }
-                else console.debug('sidebar exists we just need to show it');
+                else {
+                    console.debug('sidebar exists we just need to show it');
+                    if($('.page-sidebar').html()==''){
+                        $('.page-sidebar').append(this.sideBarView.render().el);
+                        console.debug('rerendering sidebar');
+                    }
+                    }
                 $('.page').addClass('with-sidebar'); //animate
                 $('.page-sidebar').animate({ width: "show"}, 1000, "easeOutBounce");
 
