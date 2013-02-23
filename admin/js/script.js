@@ -469,6 +469,7 @@ $(document).ready(function() {
         },
         render: function(){
             var el = this.$el;
+            console.debug('rendering sidebarview');
             $('.page-sidebar').empty();//can be remove on this.class
             el.append(this.template());
             return this;
