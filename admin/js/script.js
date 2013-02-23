@@ -469,7 +469,18 @@ $(document).ready(function() {
         //el:'',
         tagName:'ul',
         events:{
-            
+            "click #m-stats":"goStats",
+            "click #m-jokes":"goJokes",
+            "click #m-jokes-new":"goJokesNew",
+            "click #m-jokes-reported":"goJokesReported",
+            "click #m-jokes-removed":"goJokesRemoved",
+            "click #m-cats":"goCats",
+            "click #m-cats-new":"goCatsNew",
+            "click #m-users":"goUsers",
+            "click #m-users-new":"goUsersNew",
+            "click #m-users-find":"goUsersFind",
+            "click #m-users-reported":"goUsersReported",
+            "click #m-users-blacklist":"goUsersBlacklist"
         },
         initialize:function(){
             this.template=_.template($('#item-sidebar').html());
@@ -480,7 +491,28 @@ $(document).ready(function() {
             //$('.page-sidebar').empty();//can be remove on this.class
             el.html(this.template());
             return this;   
-        }
+        },
+        goJokes:function(){
+            majokosiAdminApp.navigate('/jokes',true);
+        },
+        goJokesNew:function(){},
+        goJokesReported:function(){},
+        goJokesRemoved:function(){},
+        goCats:function(){
+            majokosiAdminApp.navigate('/categories',true);
+        },
+        goCatsNew:function(){},
+        goStats:function(){
+            majokosiAdminApp.navigate('/statistics',true);
+        },
+        goUsers:function(){
+            majokosiAdminApp.navigate('/users',true);
+        },
+        goUsersNew:function(){},
+        goUsersFind:function(){},
+        goUsersReported:function(){},
+        goUsersBlacklist:function(){}
+        
     });
     
     var CatsView = Backbone.View.extend({
