@@ -401,13 +401,13 @@ $(document).ready(function() {
                 }
                 else console.debug('sidebar exists we just need to show it');
                 $('.page').addClass('with-sidebar'); //animate
-                $('.page-sidebar').animate({ width: "hide"}, 1000, "easeOutBounce");
+                $('.page-sidebar').animate({ width: "show"}, 1000, "easeOutBounce");
 
             }
             else {
                 console.debug('hiding sidebar');
                 this.sidebarVisible = false;
-                $('.page-sidebar') $('div').animate({ width: "hide"}, 1000, "easeOutBounce",function(){
+                $('.page-sidebar').animate({ width: "hide"}, 1000, "easeOutBounce",function(){
                         $('.page').removeClass('with-sidebar');
                     }
                 );//animate
