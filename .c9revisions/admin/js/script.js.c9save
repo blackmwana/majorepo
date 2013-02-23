@@ -2049,3 +2049,7 @@
 {"ts":1361623444321,"patch":[[{"diffs":[[0," el.html"],[-1,"append"],[0,"(this.te"]],"start1":18186,"start2":18186,"length1":22,"length2":16}]],"length":37041,"saved":false}
 {"ts":1361623447110,"patch":[[{"diffs":[[0,"rn this;"],[-1,"\n         "],[0,"   \n    "]],"start1":18229,"start2":18229,"length1":26,"length2":16}]],"length":37031,"saved":false}
 {"ts":1361623452492,"patch":[[{"diffs":[[0,"      }\n"],[-1,"        \n"],[0,"    });\n"]],"start1":18243,"start2":18243,"length1":25,"length2":16}]],"length":37022,"saved":false}
+{"contributors":[],"silentsave":true,"ts":1361638145538,"patch":[[{"diffs":[[0,"eview exists');\n"],[1,"                this.\n"],[0,"            }\n  "]],"start1":13990,"start2":13990,"length1":32,"length2":54}]],"length":37044,"saved":false}
+{"ts":1361638147796,"patch":[[{"diffs":[[0,"   this."],[1,"home"],[0,"\n       "]],"start1":14019,"start2":14019,"length1":16,"length2":20}]],"length":37048,"saved":false}
+{"ts":1361638151823,"patch":[[{"diffs":[[0,"   this.home"],[1,"View.delegate"],[0,"\n           "]],"start1":14019,"start2":14019,"length1":24,"length2":37}]],"length":37061,"saved":false}
+{"ts":1361638156018,"patch":[[{"diffs":[[0,"iew.delegate"],[1,"Events();"],[0,"\n           "]],"start1":14032,"start2":14032,"length1":24,"length2":33}]],"length":37070,"saved":false}
