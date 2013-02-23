@@ -366,6 +366,9 @@ $(document).ready(function() {
             }else{
                 console.debug('gohome: homeview exists');
                 this.homeView.delegateEvents();
+                if(this.sideBarView){
+                    this.sideBarView.delegateEvents();
+                }
                 
             }
            // majokosiAdminApp.navigate('/home',true);
