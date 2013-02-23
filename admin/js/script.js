@@ -563,7 +563,7 @@ $(document).ready(function() {
     function BodyRegionManager() { //for body top level views
         this.showView = function(view) {
             if (this.currentView !== view || $('body').html()==='') {
-                if (this.currentView) {
+                if (this.currentView && this.currentView !== view) {
                     this.currentView.close();
                 }
                 else $('body').empty();
@@ -669,9 +669,12 @@ $(document).ready(function() {
                     else {
                         console.debug('admin already exists');
                         console.debug(admin);
-                        if (!mainView) mainView = new MainView({
+                        if (!mainView){
+                            console.debug('mainview doesnt exist');
+                         mainView = new MainView({
                                     model: admin
-                                });
+                                });}
+                                else console.debug('mainview exists');
                                 ar.brm.showView(mainView); // user model to be passed into the constructor
                                 mainView.goHome();
                         //   return admin;
