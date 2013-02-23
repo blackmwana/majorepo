@@ -322,10 +322,11 @@ $(document).ready(function() {
     var MainView = Backbone.View.extend({
         el: 'body',
         events: {
-            "click #menu-btn":"showSidebar",
+            "click #menu-btn":"toggleSidebar",
             "click #home-btn":"navHome",
             "click .user-login":"showUserDialogue"
         },
+        sidebarVisible:false,
         initialize: function() {
             this.model = this.options.model;
             this.model.bind('all', this.refresh,this);
@@ -334,7 +335,7 @@ $(document).ready(function() {
 
         },
         render: function() {
-            var el= this.$el;
+            var el = this.$el;
         //    el.empty();
             el.append(this.template(this.model.toJSON()));
             $('.avatar img').attr('src',function(){
@@ -350,9 +351,6 @@ $(document).ready(function() {
         },
         refresh:function(){
             majokosiAdminApp.navigate('/',true);
-        },
-        showSidebar:function(){
-            console.debug('show sidebar');
         },
         navHome:function(){
             majokosiAdminApp.navigate('/home',true);
@@ -390,6 +388,30 @@ $(document).ready(function() {
         },
         showUserDialogue:function(){
             console.debug('user dialog');
+        },
+        toggleSidebar: function() {
+            console.debug('toggling sidebar');
+            if (this.sidebarVisible === false) {
+                this.sidebarVisible = true;
+                console.debug('making sidebar visible');
+                if (!this.sideBarView) {
+                    this.sideBarView = new SideBarView();
+                    $('.page').addClass('with-sidebar'); //animate
+                    $('.page-sidebar').append(this.sideBarView.render().el);
+                }
+                $('.page-sidebar').show();//animate
+
+            }
+            else {
+                console.debug('hiding sidebar');
+                this.sidebarVisible = false;
+                $('.page-sidebar').hide({//easing
+                    complete:function(){
+                        $('.page').removeClass('with-sidebar');
+                    }
+                });//animate
+            }
+
         }
     });
     var HomeView = Backbone.View.extend({
@@ -426,7 +448,26 @@ $(document).ready(function() {
              majokosiAdminApp.navigate('/statistics',true);
         }
     });
-     var CatsView = Backbone.View.extend({
+    var SideBarView = Backbone.View.extend({
+        //el:'',
+        tagName:'ul',
+        events:{
+            
+        },
+        initialize:function(){
+            this.template=_.template($('#item-sidebar').html());
+        },
+        render: function(){
+            var el = this.$el;
+            $('.page-sidebar').empty();//can be remove on this.class
+            el.append(this.template());
+            return this;
+            
+        }
+        
+    });
+    
+    var CatsView = Backbone.View.extend({
         //el: '',
         id:"cat-content",
         className:"page-region-content ",
@@ -491,18 +532,6 @@ $(document).ready(function() {
            // $('.page-region-content').remove();
             el.append(this.template());
             return this;
-        }
-    });
-    var SidebarView= Backbone.View.extend({
-        el:'',
-        events:{
-            
-        },
-        initialize:function(){
-            
-        },
-        render:function(){
-            
         }
     });
     var NavBarView = Backbone.View.extend({
