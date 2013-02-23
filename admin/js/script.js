@@ -484,7 +484,8 @@ $(document).ready(function() {
             "click #m-users-new":"goUsersNew",
             "click #m-users-find":"goUsersFind",
             "click #m-users-reported":"goUsersReported",
-            "click #m-users-blacklist":"goUsersBlacklist"
+            "click #m-users-blacklist":"goUsersBlacklist",
+            "click #m-help":"goHelp"
         },
         initialize:function(){
             this.template=_.template($('#item-sidebar').html());
@@ -515,7 +516,8 @@ $(document).ready(function() {
         goUsersNew:function(){},
         goUsersFind:function(){},
         goUsersReported:function(){},
-        goUsersBlacklist:function(){}
+        goUsersBlacklist:function(){},
+        goHelp:function(){}
         
     });
     
