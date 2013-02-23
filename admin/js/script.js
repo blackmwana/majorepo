@@ -359,8 +359,13 @@ $(document).ready(function() {
         },
         goHome: function(){
             console.debug('going home, showing homeview');
-            if(!this.homeView)
+            if(!this.homeView){
+                
+            console.debug('gohome: homeview doesnt exist');
             this.homeView = new HomeView();
+            }else{
+                console.debug('gohome: homeview exists');
+            }
            // majokosiAdminApp.navigate('/home',true);
            majokosiAdminApp.prm.showView(this.homeView);
         },
@@ -435,12 +440,13 @@ $(document).ready(function() {
             'click #users-pane': 'goToUsers'
         },
         initialize: function() {
-            this.template=_.template($('#item-home').html());
+            this.template = _.template($('#item-home').html());
         },
         render: function() {
-            var el=this.$el;
+            var el = this.$el;
           //  $('.page-region-content').remove();
-            el.append(this.template());
+            //el.append(this.template());
+            el.html(this.template());
          
             return this;
         },
@@ -470,12 +476,10 @@ $(document).ready(function() {
         render: function(){
             var el = this.$el;
             console.debug('rendering sidebarview');
-            $('.page-sidebar').empty();//can be remove on this.class
-            el.append(this.template());
-            return this;
-            
+            //$('.page-sidebar').empty();//can be remove on this.class
+            el.html(this.template());
+            return this;   
         }
-        
     });
     
     var CatsView = Backbone.View.extend({
@@ -561,6 +565,7 @@ $(document).ready(function() {
 
         this.showView = function(view) {
             if(this.currentView && this.currentView!==view) {
+                console.debug('prm: closing currentview');
                 this.currentView.close();
             }
             this.currentView = view;
@@ -575,7 +580,10 @@ $(document).ready(function() {
                 if (this.currentView && this.currentView !== view) {
                     this.currentView.close();
                 }
-                else $('body').empty();
+                else {
+                    $('body').empty();
+                    console.debug('brm: emptying body');
+                }
                 this.currentView = view;
                 //this.currentView.render();
                 //$("body").html(this.currentView.render().el);
