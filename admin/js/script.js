@@ -343,6 +343,7 @@ $(document).ready(function() {
                 //maybe check to see if email exists
                 return get_gravatar(admin.toJSON().email,80);
             });
+            this.sidebarVisible==f
             //removing this next part to implement region managers
             //this.homeView = new HomeView();
         //    $('.view-container').append(this.homeView.render().el);
