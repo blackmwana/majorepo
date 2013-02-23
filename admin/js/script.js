@@ -358,6 +358,7 @@ $(document).ready(function() {
         },
         goHome: function(){
             console.debug('going home, showing homeview');
+            if(!this.homeView)
             this.homeView = new HomeView();
            // majokosiAdminApp.navigate('/home',true);
            majokosiAdminApp.prm.showView(this.homeView);
@@ -551,7 +552,7 @@ $(document).ready(function() {
     function PageRegionManager() {
 
         this.showView = function(view) {
-            if(this.currentView) {
+            if(this.currentView && this.currentView!==view) {
                 this.currentView.close();
             }
             this.currentView = view;
@@ -905,7 +906,7 @@ $(document).ready(function() {
                                 if (!mainView) mainView = new MainView({
                                     model: admin
                                 });
-                                mainView.sidebarVisible=false;//reset it in case the page was refreshed
+                               // mainView.sidebarVisible=false;//reset it in case the page was refreshed
                                 ar.brm.showView(mainView); // user model to be passed into the constructor
                                 mainView.goUsers();
                             },
