@@ -1906,3 +1906,12 @@
 {"ts":1361582076958,"patch":[[{"diffs":[[0," just ne"],[1,"ed to show it"],[0,"')\n     "]],"start1":15569,"start2":15569,"length1":16,"length2":29}]],"length":35889,"saved":false}
 {"ts":1361582090248,"patch":[[{"diffs":[[0,".debug('"],[1,"sidebar exists "],[0,"we just "]],"start1":15559,"start2":15559,"length1":16,"length2":31}]],"length":35904,"saved":false}
 {"ts":1361582095728,"patch":[[{"diffs":[[0,"how it')"],[1,";"],[0,"\n       "]],"start1":15599,"start2":15599,"length1":16,"length2":17}]],"length":35905,"saved":false}
+{"ts":1361583915633,"patch":[[{"diffs":[[0,"            });\n"],[1,"                                main\n"],[0,"                "]],"start1":34273,"start2":34273,"length1":32,"length2":69}]],"length":35942,"saved":false}
+{"ts":1361583919554,"patch":[[{"diffs":[[0,"    main"],[1,"View"],[0,"\n       "]],"start1":34317,"start2":34317,"length1":16,"length2":20}]],"length":35946,"saved":false}
+{"ts":1361583921796,"patch":[[{"diffs":[[0,"mainView"],[1,".s"],[0,"\n       "]],"start1":34321,"start2":34321,"length1":16,"length2":18}]],"length":35948,"saved":false}
+{"ts":1361583925697,"patch":[[{"diffs":[[0,"inView.s"],[1,"ide"],[0,"\n       "]],"start1":34323,"start2":34323,"length1":16,"length2":19}]],"length":35951,"saved":false}
+{"ts":1361583929779,"patch":[[{"diffs":[[0,"iew.side"],[1,"V"],[0,"\n       "]],"start1":34326,"start2":34326,"length1":16,"length2":17}]],"length":35952,"saved":false}
+{"ts":1361583932010,"patch":[[{"diffs":[[0,"iew.side"],[-1,"V"],[1,"Ba"],[0,"\n       "]],"start1":34326,"start2":34326,"length1":17,"length2":18}]],"length":35953,"saved":false}
+{"ts":1361583937615,"patch":[[{"diffs":[[0,"w.sideBa"],[1,"rVisil"],[0,"\n       "]],"start1":34328,"start2":34328,"length1":16,"length2":22}]],"length":35959,"saved":false}
+{"ts":1361583942254,"patch":[[{"diffs":[[0,"eBarVisi"],[-1,"l"],[1,"ble"],[0,"\n       "]],"start1":34333,"start2":34333,"length1":17,"length2":19}]],"length":35961,"saved":false}
+{"ts":1361584009102,"patch":[[{"diffs":[[0,"ainView.side"],[-1,"B"],[1,"b"],[0,"arVisible\n  "]],"start1":34322,"start2":34322,"length1":25,"length2":25},{"diffs":[[0,"rVisible"],[1,"=false;//reset it in case the page was refreshed"],[0,"\n       "]],"start1":34336,"start2":34336,"length1":16,"length2":64}]],"length":36009,"saved":false}

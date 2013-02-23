@@ -902,6 +902,7 @@ $(document).ready(function() {
                                 if (!mainView) mainView = new MainView({
                                     model: admin
                                 });
+                                mainView.sidebarVisible=false;//reset it in case the page was refreshed
                                 ar.brm.showView(mainView); // user model to be passed into the constructor
                                 mainView.goUsers();
                             },
