@@ -46,6 +46,9 @@ h1:hover{
 #header-icons a{
     cursor:pointer;
 }
+.page-sidebar{
+    display:none;
+}
 #home-content{
     /*width:50em;*/
     border: solid 1px black;

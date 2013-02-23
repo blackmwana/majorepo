@@ -396,9 +396,9 @@ $(document).ready(function() {
                 console.debug('making sidebar visible');
                 if (!this.sideBarView) {
                     this.sideBarView = new SideBarView();
-                    $('.page').addClass('with-sidebar'); //animate
                     $('.page-sidebar').append(this.sideBarView.render().el);
                 }
+                $('.page').addClass('with-sidebar'); //animate
                 $('.page-sidebar').show();//animate
 
             }
