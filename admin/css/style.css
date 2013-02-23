@@ -48,6 +48,8 @@ h1:hover{
 }
 .page-sidebar{
     display:none;
+    margin-left: 0;
+    margin-top: 7.8em;
 }
 #home-content{
     /*width:50em;*/

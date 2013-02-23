@@ -395,9 +395,11 @@ $(document).ready(function() {
                 this.sidebarVisible = true;
                 console.debug('making sidebar visible');
                 if (!this.sideBarView) {
+                    console.debug('sidebar doesnt exist lets make it');
                     this.sideBarView = new SideBarView();
                     $('.page-sidebar').append(this.sideBarView.render().el);
                 }
+                else console.debug('sidebar exists we just need to show it');
                 $('.page').addClass('with-sidebar'); //animate
                 $('.page-sidebar').show();//animate
 

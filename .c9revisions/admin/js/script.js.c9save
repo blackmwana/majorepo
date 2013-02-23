@@ -1890,3 +1890,19 @@
 {"ts":1361581772906,"patch":[[{"diffs":[[0,"View();\n"],[-1,"        \n"],[0,"        "]],"start1":15356,"start2":15356,"length1":25,"length2":16},{"diffs":[[0,"              }\n"],[1,"                \n"],[0,"                "]],"start1":15443,"start2":15443,"length1":32,"length2":49}]],"length":35709,"saved":false}
 {"ts":1361581776814,"patch":[[{"diffs":[[0,"                "],[1," $('.page').addClass('with-sidebar'); //animate"],[0,"\n               "]],"start1":15459,"start2":15459,"length1":32,"length2":79}]],"length":35756,"saved":false}
 {"ts":1361581780979,"patch":[[{"diffs":[[0,"                "],[-1," "],[0,"$('.page').addCl"]],"start1":15459,"start2":15459,"length1":33,"length2":32}]],"length":35755,"saved":false}
+{"ts":1361582015455,"patch":[[{"diffs":[[0,".sideBarView) {\n"],[1,"                    \n"],[0,"                "]],"start1":15290,"start2":15290,"length1":32,"length2":53}]],"length":35776,"saved":false}
+{"ts":1361582020103,"patch":[[{"diffs":[[0,"                "],[1,"consol"],[0,"\n               "]],"start1":15310,"start2":15310,"length1":32,"length2":38}]],"length":35782,"saved":false}
+{"ts":1361582023987,"patch":[[{"diffs":[[0,"  consol"],[1,"e.de"],[0,"\n       "]],"start1":15324,"start2":15324,"length1":16,"length2":20}]],"length":35786,"saved":false}
+{"ts":1361582026164,"patch":[[{"diffs":[[0,"nsole.de"],[1,"bug"],[0,"\n       "]],"start1":15328,"start2":15328,"length1":16,"length2":19}]],"length":35789,"saved":false}
+{"ts":1361582031823,"patch":[[{"diffs":[[0,"le.debug"],[1,"('sideb')"],[0,"\n       "]],"start1":15331,"start2":15331,"length1":16,"length2":25}]],"length":35798,"saved":false}
+{"ts":1361582035698,"patch":[[{"diffs":[[0,"g('sideb"],[1,"ar doesnt exi"],[0,"')\n     "]],"start1":15338,"start2":15338,"length1":16,"length2":29}]],"length":35811,"saved":false}
+{"ts":1361582039783,"patch":[[{"diffs":[[0,"esnt exi"],[1,"st lets make "],[0,"')\n     "]],"start1":15351,"start2":15351,"length1":16,"length2":29}]],"length":35824,"saved":false}
+{"ts":1361582044028,"patch":[[{"diffs":[[0,"ts make "],[1,"it"],[0,"')"],[1,";"],[0,"\n       "]],"start1":15364,"start2":15364,"length1":18,"length2":21}]],"length":35827,"saved":false}
+{"ts":1361582056577,"patch":[[{"diffs":[[0,"              }\n"],[1,"                \n"],[0,"                "]],"start1":15515,"start2":15515,"length1":32,"length2":49}]],"length":35844,"saved":false}
+{"ts":1361582060737,"patch":[[{"diffs":[[0,"                "],[1,"else"],[0,"\n               "]],"start1":15531,"start2":15531,"length1":32,"length2":36}]],"length":35848,"saved":false}
+{"ts":1361582064624,"patch":[[{"diffs":[[0,"    else"],[1," console."],[0,"\n       "]],"start1":15543,"start2":15543,"length1":16,"length2":25}]],"length":35857,"saved":false}
+{"ts":1361582068623,"patch":[[{"diffs":[[0,"console."],[1,"debug('')"],[0,"\n       "]],"start1":15552,"start2":15552,"length1":16,"length2":25}]],"length":35866,"saved":false}
+{"ts":1361582072920,"patch":[[{"diffs":[[0,".debug('"],[1,"we just ne"],[0,"')\n     "]],"start1":15559,"start2":15559,"length1":16,"length2":26}]],"length":35876,"saved":false}
+{"ts":1361582076958,"patch":[[{"diffs":[[0," just ne"],[1,"ed to show it"],[0,"')\n     "]],"start1":15569,"start2":15569,"length1":16,"length2":29}]],"length":35889,"saved":false}
+{"ts":1361582090248,"patch":[[{"diffs":[[0,".debug('"],[1,"sidebar exists "],[0,"we just "]],"start1":15559,"start2":15559,"length1":16,"length2":31}]],"length":35904,"saved":false}
+{"ts":1361582095728,"patch":[[{"diffs":[[0,"how it')"],[1,";"],[0,"\n       "]],"start1":15599,"start2":15599,"length1":16,"length2":17}]],"length":35905,"saved":false}
