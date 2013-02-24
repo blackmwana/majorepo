@@ -44,6 +44,9 @@ h1{
 h1:hover{
     color:white;
 }
+.page-header{
+    height:7.8em;
+}
 #header-icons{
     position:relative;
     top:1.5em;
