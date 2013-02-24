@@ -376,7 +376,8 @@ $(document).ready(function() {
         },
          goCats: function(){
             console.debug('going cats,fetching , showing catsview');
-            if(!cats) cats = new Cats();
+            if(!cats) 
+                cats = new Cats();
             cats.fetch({
                 success:function(){
                     console.debug('mainview,gocats:cats have been fetched');
