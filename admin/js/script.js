@@ -375,10 +375,20 @@ $(document).ready(function() {
            majokosiAdminApp.prm.showView(this.homeView);
         },
          goCats: function(){
-            console.debug('going cats, showing catsview');
-            this.catsView = new CatsView();
-           // majokosiAdminApp.navigate('/home',true);
-           majokosiAdminApp.prm.showView(this.catsView);
+            console.debug('going cats,fetching , showing catsview');
+            cats.fetch({
+                success:function(){
+                    console.debug('mainview,gocats:cats have been fetched');
+                    this.catsView = new CatsView({collection:cats});
+                    majokosiAdminApp.prm.showView(this.catsView);
+                },
+                error:function(){
+                    //do something
+                    //show alert
+                    console.debug('mainview,gocats:cats have been fetched');
+                }
+            });
+           // majokosiAdminApp.navigate('/home',true);  
         },
          goUsers: function(){
             console.debug('going users, showing usersview');
@@ -529,12 +539,57 @@ $(document).ready(function() {
 
         },
         initialize: function() {
-            this.template= _.template($('#item-cats').html());
+            this.template = _.template($('#item-cats').html());
+            //this.rowTemplate= _.template($('#item-cats-row').html());
         },
         render: function() {
             var el=this.$el;
+            var collection = this.collection;
           //  $('.page-region-content').remove();
+          /*
+count      
+icon	 
+title	  
+title_nd	  
+title_sn
+  <tr>
+            <td><%=title%></td>
+            <td><%=icon%></td>
+            <td><%=title_sh%></td>
+            <td><%=title_nd%></td>
+            <td><%=count%></td>
+ </tr>
+          */
             el.append(this.template());
+            collection.each(function(cat){
+                var c = cat.toJSON();
+                var row='';
+                    row+='<tr>'
+                        row += '<td>';
+                            if (c.title) row += c.title;
+                                else row += 'not set';
+                        row += '</td>'
+                        row += '<td>';
+                            if (c.icon) row += c.icon;
+                                else row += 'not set';
+                        row += '</td>'
+                        row += '<td>';
+                            if (c.title_sh) row += c.title_sh;
+                                else row += 'not set';
+                        row += '</td>'
+                        row += '<td>';
+                            if (c.title_nd) row += c.title_nd;
+                                else row += 'not set';
+                        row += '</td>'
+                        row += '<td>';
+                            if (c.count) row += c.count;
+                                else row += 'not set';
+                        row += '</td>'
+                    row+='</tr>'
+                el.find('tbody').append(row);    
+                //'<img src ='c.icon+'/>'
+            });
+
             return this;
         }
     });
