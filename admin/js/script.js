@@ -21,7 +21,7 @@ $(document).ready(function() {
     
     
     var admin;
-    var cats;
+
     var mainView;
     
     function get_gravatar(email, size) {
@@ -253,7 +253,7 @@ $(document).ready(function() {
     var Cats = StackMob.Collection.extend({
         model:Cat
     });
-   
+       
     
     var LoginView = Backbone.View.extend({
         el: 'body',
@@ -376,6 +376,7 @@ $(document).ready(function() {
         },
          goCats: function(){
             console.debug('going cats,fetching , showing catsview');
+            if(!cats) cats = new Cats();
             cats.fetch({
                 success:function(){
                     console.debug('mainview,gocats:cats have been fetched');
