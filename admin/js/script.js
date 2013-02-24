@@ -23,6 +23,9 @@ $(document).ready(function() {
     var admin;
     var mainView;
     var cats;
+    window.cats=cats;
+    var users;
+    var jokes;
     function get_gravatar(email, size) {
 
         // MD5 (Message-Digest Algorithm) by WebToolkit
