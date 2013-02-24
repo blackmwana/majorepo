@@ -419,14 +419,14 @@ $(document).ready(function() {
                     }
                     }
                 $('.page').addClass('with-sidebar'); //animate
-                $('.page-sidebar').animate({ width: "show"}, 1000, "easeOutBounce");
+                $('.page-sidebar').stop().animate({ width: "show"}, 1000, "easeOutBounce");
 
             }
             else {
                 console.debug('hiding sidebar');
                 this.sidebarVisible = false;
                  $('.page').removeClass('with-sidebar');
-                $('.page-sidebar').animate({ width: "hide"}, 1000, "easeOutBounce",function(){
+                $('.page-sidebar').stop().animate({ width: "hide"}, 1000, "easeOutBounce",function(){
                        
                     }
                 );//animate
