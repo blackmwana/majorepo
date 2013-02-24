@@ -82,8 +82,12 @@ border: solid 2px red;
 
 */
 
-
-
+.span8{
+    border:solid white 1px;
+    }
+.grid{
+    border:solid yellow 1px;
+}
 
 
 
