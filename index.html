@@ -16,6 +16,29 @@
         <script type="text/javascript" src="http://dev.majokosi.blackmwanagmailcom.stackmobapp.com/js/stackmobinit.js"></script>
         <script type="text/javascript" src="http://dev.majokosi.blackmwanagmailcom.stackmobapp.com/js/input-control.js"></script>
         <script type="text/javascript" src="http://dev.majokosi.blackmwanagmailcom.stackmobapp.com/js/dialog.js"></script>
+        
+        
+        
+        <script type="text/template" id="item-cats-new">
+                            <div>
+                                <label>Title</label>
+                                <input type="text" />
+                            </div>
+                            <div>
+                                <label>title(shona)</label>
+                                <input type="text" />
+                            </div>
+                            <div>
+                                <label>Title (ndebele)</label>
+                                <input type="text" />
+                            </div>
+                            <div>
+                                <label>count</label>
+                            </div>
+                            <div>
+                                <label>Icon</label>
+                            </div>
+        </script>
     </head>
     
     <body class="bg-color-red modern-ui">
@@ -54,7 +77,6 @@
                     <div class="span8 offset3">
                         <div class="grid">
                             <div class="row">
-                            
                                  <button id='dabutton'> click me if you dare -_-</button>
                             </div>
                         </div>
@@ -64,11 +86,11 @@
         </div>
         <script type="text/javascript">
             $('#dabutton').click(function(){
-                //var el =_.template($('template_id').html());
-                var el ='<div><label>Title</label> <input type = "text"/></div><div><label>title(shona)</label> <input type = "text"/></div><div><label>Title (ndebele)</label> <input type = "text"/></div><div><label>count</label></div><div><label>Icon</label></div>';
+                var el =_.template($('#item-cats-new').html());
+                //var el =;
                  $.Dialog({
-                     'title': 'My dialog title',
-                     'content': el,//el(model.toJSON());n
+                     'title': 'Add new category',
+                     'content': el(),//el,//el(model.toJSON());n
                      'draggable': true,
                      'overlay': true,
                      'closeButton': true,
