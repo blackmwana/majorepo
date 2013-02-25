@@ -19,7 +19,6 @@ Backbone.View.prototype.close = function() {
     //////////////////
 $(document).ready(function() {
     
-    
     var admin;
     var mainView;
     var cats;
@@ -255,7 +254,6 @@ $(document).ready(function() {
         model:Cat
     });
        
-    
     var LoginView = Backbone.View.extend({
         el: 'body',
         events: {
@@ -332,6 +330,9 @@ $(document).ready(function() {
             this.model = this.options.model;
             this.model.bind('all', this.refresh,this);
             this.template=_.template($('#item-main').html());
+            //this.add_cat_template=_.template($('#item-add').html);//same for editting
+            //this.add_user_template=_.template($('#item-add').html);//same for editing
+            //this.add_joke_template=_.template($('#item-add').html);//same for editing
             //this.render();//rendering in this.brm 
 
         },
@@ -533,7 +534,30 @@ $(document).ready(function() {
         goHelp:function(){}
         
     });
-    
+    var UpdateView = BackBone.View.extend({// pass in type in the options 
+        id:'',
+       className:'',
+       events:{},
+       initialize:function(){
+           
+       },
+       render:function(){
+           
+       }
+    });
+    var AddView = BackBone.View.extend({});//dialog box no need for view object
+    var FindView = BackBone.View.extend({});//dialog box no need for view object
+    var HelpView = BackBone.View.extend({
+        id:'',
+       className:'',
+       events:{},
+       initialize:function(){
+           
+       },
+       render:function(){
+           
+       }
+    });
     var CatsView = Backbone.View.extend({
         //el: '',
         id:"cat-content",
@@ -549,20 +573,6 @@ $(document).ready(function() {
             var el=this.$el;
             var collection = this.collection;
           //  $('.page-region-content').remove();
-          /*
-count      
-icon	 
-title	  
-title_nd	  
-title_sn
-  <tr>
-            <td><%=title%></td>
-            <td><%=icon%></td>
-            <td><%=title_sh%></td>
-            <td><%=title_nd%></td>
-            <td><%=count%></td>
- </tr>
-          */
             el.append(this.template());
             collection.each(function(cat){
                 var c = cat.toJSON();

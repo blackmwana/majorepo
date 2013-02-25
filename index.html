@@ -53,24 +53,38 @@
                     <div class="span8 offset3">
                         <div class="grid">
                             <div class="row">
-                                <table class="hovered bordered">
-                                    <thead>
-                                        <tr>
-                                            <th class="right">Title (en)</th>
-                                            <th class="right">Icon</th>
-                                            <th class="right">Title (sh)</th>
-                                            <th class="right">Title (nd)</th>
-                                            <th class="right">Count</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody></tbody>
-                                </table>
+                            
+                                 <button id='dabutton'> click me if you dare -_-</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <script type="text/javascript">
+            $('#dabutton').click(function(){
+                var el ='<label></label> <input/>';
+                 $.Dialog({
+                     'title': 'My dialog title',
+                     'content': el,
+                     'draggable': true,
+                     'overlay': true,
+                     'closeButton': true,
+                     'buttonsAlign': 'right',
+                     'position': {
+                         'zone': 'center'
+                     },
+                     'buttons': {
+                         'save': {
+                             'action': function() {}
+                         },
+                         'cancel': {
+                             'action': function() {}
+                         }
+                     }
+                 });
+                });
+        </script>
     </body>
 
 </html>
