@@ -64,10 +64,11 @@
         </div>
         <script type="text/javascript">
             $('#dabutton').click(function(){
+                //var el =_.template($('template_id').html());
                 var el ='<div><label>Name</label> <input type = "text"/></div><div><label>Name</label> <input type = "text"/></div><div><label>Name</label> <input type = "text"/></div>';
                  $.Dialog({
                      'title': 'My dialog title',
-                     'content': el,
+                     'content': el,//el(model.toJSON());n
                      'draggable': true,
                      'overlay': true,
                      'closeButton': true,

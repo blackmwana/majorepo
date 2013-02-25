@@ -534,7 +534,7 @@ $(document).ready(function() {
         goHelp:function(){}
         
     });
-    var UpdateView = BackBone.View.extend({// pass in type in the options 
+    var UpdateView = Backbone.View.extend({// pass in type in the options 
         id:'',
        className:'',
        events:{},
@@ -545,9 +545,9 @@ $(document).ready(function() {
            
        }
     });
-    var AddView = BackBone.View.extend({});//dialog box no need for view object
-    var FindView = BackBone.View.extend({});//dialog box no need for view object
-    var HelpView = BackBone.View.extend({
+    var AddView = Backbone.View.extend({});//dialog box no need for view object
+    var FindView = Backbone.View.extend({});//dialog box no need for view object
+    var HelpView = Backbone.View.extend({
         id:'',
        className:'',
        events:{},
