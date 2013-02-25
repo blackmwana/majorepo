@@ -212,3 +212,10 @@
 {"ts":1361813370366,"patch":[[{"diffs":[[0,"ckmobapp.com/js/"],[1,"dialog"],[0,"input-control.js"]],"start1":1377,"start2":1377,"length1":32,"length2":38}]],"length":4287,"saved":false}
 {"ts":1361813372264,"patch":[[{"diffs":[[0,"s/dialog"],[-1,"input-contr"],[0,"ol.js\"><"]],"start1":1391,"start2":1391,"length1":27,"length2":16}]],"length":4276,"saved":false}
 {"ts":1361813373521,"patch":[[{"diffs":[[0,"s/dialog"],[-1,"ol"],[0,".js\"></s"]],"start1":1391,"start2":1391,"length1":18,"length2":16}]],"length":4274,"saved":false}
+{"ts":1361813811903,"patch":[[{"diffs":[[0,"/></div>"],[1,"\n                "],[0,"';\n     "]],"start1":3514,"start2":3514,"length1":16,"length2":33}]],"length":4291,"saved":false}
+{"ts":1361813814256,"patch":[[{"diffs":[[0,"        "],[1,"            "],[0,"';\n     "]],"start1":3531,"start2":3531,"length1":16,"length2":28}]],"length":4303,"saved":false}
+{"ts":1361813815670,"patch":[[{"diffs":[[0,"        "],[-1,"    "],[0,"';\n     "]],"start1":3539,"start2":3539,"length1":20,"length2":16}]],"length":4299,"saved":false}
+{"ts":1361813817943,"patch":[[{"diffs":[[0,"        "],[1,"<div><label>Name</label> <input type = \"text\"/></div>"],[0,"';\n     "]],"start1":3539,"start2":3539,"length1":16,"length2":69}]],"length":4352,"saved":false}
+{"ts":1361813823529,"patch":[[{"diffs":[[0,"            "],[1," "],[0,"<div><label>"]],"start1":3535,"start2":3535,"length1":24,"length2":25}]],"length":4353,"saved":false}
+{"ts":1361813828059,"patch":[[{"diffs":[[0,"div>"],[-1,"\n                         "],[0,"<div"]],"start1":3518,"start2":3518,"length1":34,"length2":8}]],"length":4327,"saved":false}
+{"ts":1361813840315,"patch":[[{"diffs":[[0,"l> <input type ="],[1," \"text\"/></div><div><label>Name</label> <input type ="],[0," \"text\"/></div>'"]],"start1":3544,"start2":3544,"length1":32,"length2":85}]],"length":4380,"saved":false}
