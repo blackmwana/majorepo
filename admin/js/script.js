@@ -520,7 +520,31 @@ $(document).ready(function() {
         goCats:function(){
             majokosiAdminApp.navigate('/categories',true);
         },
-        goCatsNew:function(){},
+        goCatsNew:function(){
+             
+                var el =_.template($('#item-cats-new').html());
+                //var el =;
+                 $.Dialog({
+                     'title': 'Add new category',
+                     'content': el(),//el,//el(model.toJSON());n
+                     'draggable': true,
+                     'overlay': true,
+                     'closeButton': true,
+                     'buttonsAlign': 'right',
+                     'position': {
+                         'zone': 'center'
+                     },
+                     'buttons': {
+                         'save': {
+                             'action': function() {}
+                         },
+                         'cancel': {
+                             'action': function() {}
+                         }
+                     }
+                 });
+              
+        },
         goStats:function(){
             majokosiAdminApp.navigate('/statistics',true);
         },
