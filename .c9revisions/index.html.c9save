@@ -207,3 +207,8 @@
 {"ts":1361813202730,"patch":[[{"diffs":[[0,"el></lab"],[1,"el"],[0,">';\n    "]],"start1":3350,"start2":3350,"length1":16,"length2":18}]],"length":4113,"saved":false}
 {"ts":1361813204453,"patch":[[{"diffs":[[0,"</label>"],[1," <"],[0,"';\n     "]],"start1":3353,"start2":3353,"length1":16,"length2":18}]],"length":4115,"saved":false}
 {"ts":1361813206808,"patch":[[{"diffs":[[0,"label> <"],[1,"input>"],[0,"';\n     "]],"start1":3355,"start2":3355,"length1":16,"length2":22}]],"length":4121,"saved":false}
+{"ts":1361813273279,"patch":[[{"diffs":[[0,"r el ='<"],[1,"div><"],[0,"label>"],[1,"Name"],[0,"</label>"]],"start1":3339,"start2":3339,"length1":22,"length2":31},{"diffs":[[0,"> <input"],[1," type = \"text\"/></div"],[0,">';\n    "]],"start1":3369,"start2":3369,"length1":16,"length2":37}]],"length":4151,"saved":false}
+{"ts":1361813366162,"patch":[[{"diffs":[[0,"\"></script>\n"],[1,"        <script type=\"text/javascript\" src=\"http://dev.majokosi.blackmwanagmailcom.stackmobapp.com/js/input-control.js\"></script>\n"],[0,"    </head>\n"]],"start1":1279,"start2":1279,"length1":24,"length2":154}]],"length":4281,"saved":false}
+{"ts":1361813370366,"patch":[[{"diffs":[[0,"ckmobapp.com/js/"],[1,"dialog"],[0,"input-control.js"]],"start1":1377,"start2":1377,"length1":32,"length2":38}]],"length":4287,"saved":false}
+{"ts":1361813372264,"patch":[[{"diffs":[[0,"s/dialog"],[-1,"input-contr"],[0,"ol.js\"><"]],"start1":1391,"start2":1391,"length1":27,"length2":16}]],"length":4276,"saved":false}
+{"ts":1361813373521,"patch":[[{"diffs":[[0,"s/dialog"],[-1,"ol"],[0,".js\"></s"]],"start1":1391,"start2":1391,"length1":18,"length2":16}]],"length":4274,"saved":false}
