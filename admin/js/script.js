@@ -673,7 +673,7 @@ $(document).ready(function() {
             collection.each(function(cat){
                 var c = cat.toJSON();
                 var row='';
-                    row+='<tr>'
+                    row+='<tr'++'>'
                         row += '<td>';
                             if (c.title) row += c.title;
                                 else row += 'not set';
@@ -707,6 +707,7 @@ $(document).ready(function() {
                 this.parent.sideBarView=new SideBarView();
                 this.parent.sideBarView.parent = this.parent;
             }
+            console.debug($(ev.target).data('id'));
             this.parent.sideBarView.goCatsEdit($(ev.target).data('id'));
             
         },
