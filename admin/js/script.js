@@ -673,7 +673,7 @@ $(document).ready(function() {
             collection.each(function(cat){
                 var c = cat.toJSON();
                 var row='';
-                    row+='<tr'++'>'
+                    row+='<tr data-id="'+c.cat_id+'">'
                         row += '<td>';
                             if (c.title) row += c.title;
                                 else row += 'not set';

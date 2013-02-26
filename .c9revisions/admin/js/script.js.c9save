@@ -2423,3 +2423,4 @@
 {"ts":1361912784986,"patch":[[{"diffs":[[0,"console."],[1,"debug"],[0,"($(ev.ta"]],"start1":27946,"start2":27946,"length1":16,"length2":21}]],"length":47154,"saved":false}
 {"ts":1361912940265,"patch":[[{"diffs":[[0,"ow+='<tr"],[1,"++"],[0,">'\r\n    "]],"start1":26487,"start2":26487,"length1":16,"length2":18}]],"length":47156,"saved":false}
 {"ts":1361912943332,"patch":[[{"diffs":[[0,"ow+='<tr"],[1,"'"],[0,"++"],[1,"'"],[0,">'\r\n    "]],"start1":26487,"start2":26487,"length1":18,"length2":20}]],"length":47158,"saved":false}
+{"ts":1361913009069,"patch":[[{"diffs":[[0,"'<tr"],[-1,"'+"],[1," data-id=\"'+c.cat_id"],[0,"+'"],[1,"\""],[0,">'\r\n"]],"start1":26491,"start2":26491,"length1":12,"length2":31}]],"length":47177,"saved":false}
