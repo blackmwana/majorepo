@@ -605,8 +605,8 @@ $(document).ready(function() {
                          
                          'save': {
                              'action': function() {
-                                 console.debug(this);
-                                //console.debug(this.model.toJSON());//fingers crossed 
+                                // console.debug(this);
+                                console.debug(m);//fingers crossed 
                              }
                          },
                          'delete':{
