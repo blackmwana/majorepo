@@ -708,6 +708,9 @@ $(document).ready(function() {
                 this.parent.sideBarView.parent = this.parent;
             }
             console.debug($(ev.target).data('id'));
+            console.debug(ev);
+            console.debug(ev.target);
+            console.debug($(ev.target));
             this.parent.sideBarView.goCatsEdit($(ev.target).data('id'));
             
         },
