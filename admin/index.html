@@ -134,18 +134,19 @@
         <script type="text/template" id="item-cats-new">
                             <div>
                                 <label>Title</label>
-                                <input value="<%=blah%>"type="text" />
+                                <input id="title" type="text" />
                             </div>
                             <div>
                                 <label>title(shona)</label>
-                                <input type="text" />
+                                <input id="title_sh" type="text" />
                             </div>
                             <div>
                                 <label>Title (ndebele)</label>
-                                <input type="text" />
+                                <input id="title_nd" type="text" />
                             </div>
                             <div>
                                 <label>count</label>
+                                <spab>
                             </div>
                             <div>
                                 <label>Icon</label>
@@ -172,7 +173,7 @@
                     </div>
         </script>
         <script type="text/template" id= "item-cats-row">
-            <tr>
+            <tr data-id="<%=cat_id%>">
             <td><%=title%></td>
             <td><%=icon%></td>
             <td><%=title_sh%></td>

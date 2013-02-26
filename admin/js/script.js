@@ -365,6 +365,7 @@ $(document).ready(function() {
                 
             console.debug('gohome: homeview doesnt exist');
             this.homeView = new HomeView();
+                    this.homeView.parent = this;
             }else{
                 console.debug('gohome: homeview exists');
                 this.homeView.delegateEvents();
@@ -384,6 +385,7 @@ $(document).ready(function() {
                 success:function(){
                     console.debug('mainview,gocats:cats have been fetched');
                     this.catsView = new CatsView({collection:cats});
+                    this.catsView.parent = this;
                     majokosiAdminApp.prm.showView(this.catsView);
                 },
                 error:function(){
@@ -397,18 +399,21 @@ $(document).ready(function() {
          goUsers: function(){
             console.debug('going users, showing usersview');
             this.usersView = new UsersView();
+            this.usersView.parent = this;
            // majokosiAdminApp.navigate('/home',true);
            majokosiAdminApp.prm.showView(this.usersView);
         },
          goJokes: function(){
             console.debug('going jokes, showing jokesview');
             this.jokesView = new JokesView();
+            this.jokesView.parent = this;
            // majokosiAdminApp.navigate('/home',true);
            majokosiAdminApp.prm.showView(this.jokesView);
         },
          goStats: function(){
             console.debug('going stats, showing statsview');
             this.statsView = new StatsView();
+            this.statsView.parent = this;
            // majokosiAdminApp.navigate('/home',true);
            majokosiAdminApp.prm.showView(this.statsView);
         },
@@ -423,6 +428,7 @@ $(document).ready(function() {
                 if (!this.sideBarView) {
                     console.debug('sidebar doesnt exist lets make it');
                     this.sideBarView = new SideBarView();
+                    this.sideBarView.parent = this;
                     $('.page-sidebar').append(this.sideBarView.render().el);
                 }
                 else {
@@ -545,6 +551,69 @@ $(document).ready(function() {
                  });
               
         },
+        goCatsEdit:function(id){
+            /*
+                            <div>
+                                <label>Title</label>
+                                <input id="title" type="text" />
+                            </div>
+                            <div>
+                                <label>title(shona)</label>
+                                <input id="title_sh" type="text" />
+                            </div>
+                            <div>
+                                <label>Title (ndebele)</label>
+                                <input id="title_nd" type="text" />
+                            </div>
+                            <div>
+                                <label>count</label>
+                                <spab>
+                            </div>
+                            <div>
+                                <label>Icon</label>
+                            </div>
+            */
+            var model = cats.get(id);
+            var m= model.toJSON();
+            var el ='<div><label>Title</label><input id="title" type="text"'; 
+            if(m.title)el+='value="'+m.title+'"';
+            el+='/></div><div><label>title(shona)</label><input id="title_sh" type="text" ';
+            if(m.title_sh)el+='value="'+m.title_sh+'"';
+            el+='/></div><div><label>Title (ndebele)</label><input id="title_nd" type="text" ';
+            if(m.title_nd)el+='value="'+m.title_nd+'"';
+            el+='/></div><div><label>count</label><span>';
+            if(m.count)el+=m.count;
+              else el+= 0 ;
+            el+='</span></div><div><label>Icon</label></div>';// image gallery in the last div
+                            //_.template($('#item-cats-edit').html());
+                //var el =;
+                 $.Dialog({
+                     model:model,
+                     'title': 'edit category',
+                     'content': el,//el(model.toJSON());n
+                     'draggable': true,
+                     'overlay': true,
+                     'closeButton': true,
+                     'buttonsAlign': 'right',
+                     'position': {
+                         'zone': 'center'
+                     },
+                     'buttons': {
+                         
+                         'save': {
+                             'action': function() {
+                                console.debug(this.model.toJSON());//fingers crossed 
+                             }
+                         },
+                         'delete':{
+                             'action':function(){}
+                         },
+                         'cancel': {
+                             'action': function() {}
+                         }
+                     }
+                 });
+        },
         goStats:function(){
             majokosiAdminApp.navigate('/statistics',true);
         },
@@ -587,7 +656,7 @@ $(document).ready(function() {
         id:"cat-content",
         className:"page-region-content ",
         events: {
-
+            "click tr":"showCatEdit"
         },
         initialize: function() {
             this.template = _.template($('#item-cats').html());
@@ -628,6 +697,22 @@ $(document).ready(function() {
             });
 
             return this;
+        },
+        showCatEdit:function(ev){
+            if (!this.parent.sideBarView){
+                this.parent.sideBarView=new SideBarView();
+                this.parent.sideBarView.parent = this.parent;
+            }
+            this.parent.sideBarView.goCatsEdit($(ev.target).data('id'));
+            
+        },
+        showCatNew:function(ev){
+            if (!this.parent.sideBarView){
+                this.parent.sideBarView=new SideBarView();
+                this.parent.sideBarView.parent = this.parent;
+            }
+            this.parent.sideBarView.goCatsNew();
+            
         }
     });
     var UsersView = Backbone.View.extend({
