@@ -575,6 +575,8 @@ $(document).ready(function() {
             */
             console.debug('gocatsedit:rendering dialogbox');
             var model = cats.get(id);
+            console.debug('id:'+id);
+            console.debug(model);
             var m= model.toJSON();
             var el ='<div><label>Title</label><input id="title" type="text"'; 
             if(m.title)el+='value="'+m.title+'"';

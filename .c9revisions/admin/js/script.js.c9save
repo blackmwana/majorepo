@@ -2407,3 +2407,12 @@
 {"ts":1361912245325,"patch":[[{"diffs":[[0,".debug('"],[1,"gocatsedit:"],[0,"')\r\n    "]],"start1":22763,"start2":22763,"length1":16,"length2":27}]],"length":47008,"saved":false}
 {"ts":1361912251187,"patch":[[{"diffs":[[0,"atsedit:"],[1,"rendering dialogb"],[0,"')\r\n    "]],"start1":22774,"start2":22774,"length1":16,"length2":33}]],"length":47025,"saved":false}
 {"ts":1361912254412,"patch":[[{"diffs":[[0," dialogb"],[1,"ox"],[0,"')"],[1,";"],[0,"\r\n      "]],"start1":22791,"start2":22791,"length1":18,"length2":21}]],"length":47028,"saved":false}
+{"ts":1361912389404,"patch":[[{"diffs":[[0,"s.get(id);\r\n"],[1,"            cons\r\n"],[0,"            "]],"start1":22833,"start2":22833,"length1":24,"length2":42}]],"length":47046,"saved":false}
+{"ts":1361912392553,"patch":[[{"diffs":[[0,"    cons"],[1,"ole.log"],[0,"\r\n      "]],"start1":22853,"start2":22853,"length1":16,"length2":23}]],"length":47053,"saved":false}
+{"ts":1361912398262,"patch":[[{"diffs":[[0,"console."],[1,"debu"],[0,"log"],[1,"()"],[0,"\r\n      "]],"start1":22857,"start2":22857,"length1":19,"length2":25}]],"length":47059,"saved":false}
+{"ts":1361912404386,"patch":[[{"diffs":[[0,"ole.debu"],[-1,"lo"],[0,"g("],[1,"model"],[0,")\r\n     "]],"start1":22861,"start2":22861,"length1":20,"length2":23}]],"length":47062,"saved":false}
+{"ts":1361912410618,"patch":[[{"diffs":[[0,"s.get(id);\r\n"],[1,"            console.\r\n"],[0,"            "]],"start1":22833,"start2":22833,"length1":24,"length2":46},{"diffs":[[0,"g(model)"],[1,";"],[0,"\r\n      "]],"start1":22891,"start2":22891,"length1":16,"length2":17}]],"length":47085,"saved":false}
+{"ts":1361912419034,"patch":[[{"diffs":[[0,"console."],[1,"debug()"],[0,"\r\n      "]],"start1":22857,"start2":22857,"length1":16,"length2":23}]],"length":47092,"saved":false}
+{"ts":1361912441093,"patch":[[{"diffs":[[0,"e.debug("],[1,"''"],[0,")\r\n     "]],"start1":22863,"start2":22863,"length1":16,"length2":18}]],"length":47094,"saved":false}
+{"ts":1361912447174,"patch":[[{"diffs":[[0,".debug('"],[-1,"'"],[1,"id:'+id"],[0,")\r\n     "]],"start1":22864,"start2":22864,"length1":17,"length2":23}]],"length":47100,"saved":false}
+{"ts":1361912453523,"patch":[[{"diffs":[[0,"id:'+id)"],[1,";"],[0,"\r\n      "]],"start1":22872,"start2":22872,"length1":16,"length2":17}]],"length":47101,"saved":false}
