@@ -573,6 +573,7 @@ $(document).ready(function() {
                                 <label>Icon</label>
                             </div>
             */
+            console.debug('gocatsedit:rendering dialogbox');
             var model = cats.get(id);
             var m= model.toJSON();
             var el ='<div><label>Title</label><input id="title" type="text"'; 
@@ -699,6 +700,7 @@ $(document).ready(function() {
             return this;
         },
         showCatEdit:function(ev){
+            console.debug('showcatedit:tr clicked')
             if (!this.parent.sideBarView){
                 this.parent.sideBarView=new SideBarView();
                 this.parent.sideBarView.parent = this.parent;

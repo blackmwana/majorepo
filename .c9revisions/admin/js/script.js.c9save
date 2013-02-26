@@ -2396,3 +2396,14 @@
 {"ts":1361912100435,"patch":[[{"diffs":[[0,"el.toJSO"],[1,"N()"],[0,") \r\n    "]],"start1":24228,"start2":24228,"length1":16,"length2":19}]],"length":46895,"saved":false}
 {"ts":1361912108950,"patch":[[{"diffs":[[0,"oJSON())"],[1,";//fingers croseed"],[0," \r\n     "]],"start1":24232,"start2":24232,"length1":16,"length2":34}]],"length":46913,"saved":false}
 {"ts":1361912114810,"patch":[[{"diffs":[[0,"ers cros"],[-1,"e"],[1,"s"],[0,"ed \r\n   "]],"start1":24247,"start2":24247,"length1":17,"length2":17}]],"length":46913,"saved":false}
+{"ts":1361912191468,"patch":[[{"diffs":[[0,":function(ev){\r\n"],[1,"            \r\n"],[0,"            if ("]],"start1":27548,"start2":27548,"length1":32,"length2":46}]],"length":46927,"saved":false}
+{"ts":1361912195430,"patch":[[{"diffs":[[0,"){\r\n            "],[1,"console.debug"],[0,"\r\n            if"]],"start1":27560,"start2":27560,"length1":32,"length2":45}]],"length":46940,"saved":false}
+{"ts":1361912201281,"patch":[[{"diffs":[[0,"le.debug"],[1,"('showc')"],[0,"\r\n      "]],"start1":27581,"start2":27581,"length1":16,"length2":25}]],"length":46949,"saved":false}
+{"ts":1361912207348,"patch":[[{"diffs":[[0,"g('showc"],[1,"atedit:tr clicke"],[0,"')\r\n    "]],"start1":27588,"start2":27588,"length1":16,"length2":32}]],"length":46965,"saved":false}
+{"ts":1361912215924,"patch":[[{"diffs":[[0,"r clicke"],[1,"d"],[0,"')\r\n    "]],"start1":27604,"start2":27604,"length1":16,"length2":17}]],"length":46966,"saved":false}
+{"ts":1361912230846,"patch":[[{"diffs":[[0,"        */\r\n"],[1,"            console\r\n"],[0,"            "]],"start1":22732,"start2":22732,"length1":24,"length2":45}]],"length":46987,"saved":false}
+{"ts":1361912233904,"patch":[[{"diffs":[[0," console"],[1,".debug()"],[0,"\r\n      "]],"start1":22755,"start2":22755,"length1":16,"length2":24}]],"length":46995,"saved":false}
+{"ts":1361912239450,"patch":[[{"diffs":[[0,"e.debug("],[1,"''"],[0,")\r\n     "]],"start1":22762,"start2":22762,"length1":16,"length2":18}]],"length":46997,"saved":false}
+{"ts":1361912245325,"patch":[[{"diffs":[[0,".debug('"],[1,"gocatsedit:"],[0,"')\r\n    "]],"start1":22763,"start2":22763,"length1":16,"length2":27}]],"length":47008,"saved":false}
+{"ts":1361912251187,"patch":[[{"diffs":[[0,"atsedit:"],[1,"rendering dialogb"],[0,"')\r\n    "]],"start1":22774,"start2":22774,"length1":16,"length2":33}]],"length":47025,"saved":false}
+{"ts":1361912254412,"patch":[[{"diffs":[[0," dialogb"],[1,"ox"],[0,"')"],[1,";"],[0,"\r\n      "]],"start1":22791,"start2":22791,"length1":18,"length2":21}]],"length":47028,"saved":false}
