@@ -685,6 +685,7 @@ $(document).ready(function() {
         render: function() {
             var el=this.$el;
             var collection = this.collection;
+            rowTemplate= this.rowTemplate;
           //  $('.page-region-content').remove();
             el.append(this.template());
             collection.each(function(cat){
