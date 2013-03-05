@@ -248,7 +248,18 @@ $(document).ready(function() {
     }
     // if(!curAdmin)alert ('curadmin not set');
     var Cat = StackMob.Model.extend({
-        schemaName:'cat'
+        schemaName:'cat',
+        defaults:function(){
+            
+        return{
+            title:"not",
+            icon:"not",	
+            title_sh:"not",	
+            title_nd:"not",
+            count:"not"
+        }
+        
+        }
     });
     var Cats = StackMob.Collection.extend({
         model:Cat
