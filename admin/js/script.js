@@ -1,4 +1,9 @@
 //author= blackmwana
+// consider template: _.template('
+//\<h2><%= title %></h2>\
+  //  <p><%= body %></p>\
+ // ') kind of templating for better decoupling :P
+ //http://kilon.org/blog/2012/11/3-tips-for-writing-better-backbone-views/
 Backbone.View.prototype.close = function() {
         //http://lostechies.com/derickbailey/2011/09/15/zombies-run-managing-page-transitions-in-backbone-apps/
         console.log(this.el.localName);
@@ -675,7 +680,7 @@ $(document).ready(function() {
         },
         initialize: function() {
             this.template = _.template($('#item-cats').html());
-            //this.rowTemplate= _.template($('#item-cats-row').html());
+            this.rowTemplate= _.template($('#item-cats-row').html());
         },
         render: function() {
             var el=this.$el;
@@ -683,33 +688,37 @@ $(document).ready(function() {
           //  $('.page-region-content').remove();
             el.append(this.template());
             collection.each(function(cat){
-                var c = cat.toJSON();
-                var row='';
-                    row+='<tr data-id="'+c.cat_id+'">'
-                        row += '<td>';
-                            if (c.title) row += c.title;
-                                else row += 'not set';
-                        row += '</td>'
-                        row += '<td>';
-                            if (c.icon) row += c.icon;
-                                else row += 'not set';
-                        row += '</td>'
-                        row += '<td>';
-                            if (c.title_sn) row += c.title_sn;
-                                else row += 'not set';
-                        row += '</td>'
-                        row += '<td>';
-                            if (c.title_nd) row += c.title_nd;
-                                else row += 'not set';
-                        row += '</td>'
-                        row += '<td>';
-                            if (c.count) row += c.count;
-                                else row += 'no set';
-                        row += '</td>'
-                    row+='</tr>'
-                el.find('tbody').append(row);    
+                el.find('tbody').append(rowTemplate(cat.toJSON())); 	  
+                });
+            //collection.each(function(cat){
+              //  var c = cat.toJSON();
+            //    console.debug(c);
+              //  var row='';
+                //    row+='<tr data-id="'+c.cat_id+'">'
+                  //      row += '<td>';
+                    //        if (c.title) row += c.title;
+                      //          else row += 'not set';
+                    //    row += '</td>'
+                     //   row += '<td>';
+                      //      if (c.icon) row += c.icon;
+                    //            else row += 'not set';
+                     //   row += '</td>'
+                      //  row += '<td>';
+                    //        if (c.title_sn) row += c.title_sn;
+                     //           else row += 'not set';
+                      //  row += '</td>'
+                    //    row += '<td>';
+                     //       if (c.title_nd) row += c.title_nd;
+                      //          else row += 'not set';
+                    //    row += '</td>'
+                     //   row += '<td>';
+                      //      if (c.count) row += c.count;
+                    //            else row += 'no set';
+                     //   row += '</td>'
+                //    row+='</tr>'
+                //el.find('tbody').append(row);    
                 //'<img src ='c.icon+'/>'
-            });
+            //});
 
             return this;
         },
