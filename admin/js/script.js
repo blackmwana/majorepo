@@ -569,13 +569,14 @@ $(document).ready(function() {
         },
         goCatsEdit:function(id){
             /*
+            <script type="text/template" id="item-cats-edit">
                             <div>
                                 <label>Title</label>
                                 <input id="title" type="text" />
                             </div>
                             <div>
                                 <label>title(shona)</label>
-                                <input id="title_sh" type="text" />
+                                <input id="title_sn" type="text" />
                             </div>
                             <div>
                                 <label>Title (ndebele)</label>
@@ -583,33 +584,34 @@ $(document).ready(function() {
                             </div>
                             <div>
                                 <label>count</label>
-                                <spab>
+                                <span id="count"></span>
                             </div>
                             <div>
                                 <label>Icon</label>
                             </div>
+            </script>
             */
             console.debug('gocatsedit:rendering dialogbox');
             var model = cats.get(id);
             console.debug('id:'+id);
             console.debug(model);
-            var m= model.toJSON();
-            var el ='<div><label>Title</label><input id="title" type="text"'; 
-            if(m.title)el+='value="'+m.title+'"';
-            el+='/></div><div><label>title(shona)</label><input id="title_sh" type="text" ';
-            if(m.title_sh)el+='value="'+m.title_sh+'"';
-            el+='/></div><div><label>Title (ndebele)</label><input id="title_nd" type="text" ';
-            if(m.title_nd)el+='value="'+m.title_nd+'"';
-            el+='/></div><div><label>count</label><span>';
-            if(m.count)el+=m.count;
-              else el+= 0 ;
-            el+='</span></div><div><label>Icon</label></div>';// image gallery in the last div
+            //var m= model.toJSON();
+            //var el ='<div><label>Title</label><input id="title" type="text"'; 
+            ///if(m.title)el+='value="'+m.title+'"';
+            //el+='/></div><div><label>title(shona)</label><input id="title_sh" type="text" ';
+            //if(m.title_sn)el+='value="'+m.title_sh+'"';
+            //el+='/></div><div><label>Title (ndebele)</label><input id="title_nd" type="text" ';
+            //if(m.title_nd)el+='value="'+m.title_nd+'"';
+            //el+='/></div><div><label>count</label><span>';
+            //if(m.count)el+=m.count;
+             // else el+= 0 ;
+            //el+='</span></div><div><label>Icon</label></div>';// image gallery in the last div
                             //_.template($('#item-cats-edit').html());
-                //var el =;
+                var el =_.template($('#item-cats-edit').html());
                  $.Dialog({
                      model:model,
                      'title': 'edit category',
-                     'content': el,//el(model.toJSON());n
+                     'content': el(model.toJSON()),//el,//el(model.toJSON());n
                      'draggable': true,
                      'overlay': true,
                      'closeButton': true,
@@ -691,36 +693,6 @@ $(document).ready(function() {
             collection.each(function(cat){
                 el.find('tbody').append(rowTemplate(cat.toJSON())); 	  
                 });
-            //collection.each(function(cat){
-              //  var c = cat.toJSON();
-            //    console.debug(c);
-              //  var row='';
-                //    row+='<tr data-id="'+c.cat_id+'">'
-                  //      row += '<td>';
-                    //        if (c.title) row += c.title;
-                      //          else row += 'not set';
-                    //    row += '</td>'
-                     //   row += '<td>';
-                      //      if (c.icon) row += c.icon;
-                    //            else row += 'not set';
-                     //   row += '</td>'
-                      //  row += '<td>';
-                    //        if (c.title_sn) row += c.title_sn;
-                     //           else row += 'not set';
-                      //  row += '</td>'
-                    //    row += '<td>';
-                     //       if (c.title_nd) row += c.title_nd;
-                      //          else row += 'not set';
-                    //    row += '</td>'
-                     //   row += '<td>';
-                      //      if (c.count) row += c.count;
-                    //            else row += 'no set';
-                     //   row += '</td>'
-                //    row+='</tr>'
-                //el.find('tbody').append(row);    
-                //'<img src ='c.icon+'/>'
-            //});
-
             return this;
         },
         showCatEdit:function(ev){
