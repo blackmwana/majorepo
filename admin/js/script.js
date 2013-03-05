@@ -254,9 +254,9 @@ $(document).ready(function() {
         return{
             title:"not",
             icon:"not",	
-            title_sh:"not",	
+            title_sn:"not",	
             title_nd:"not",
-            count:"not"
+            count:"0"
         }
         
         }
@@ -695,7 +695,7 @@ $(document).ready(function() {
                                 else row += 'not set';
                         row += '</td>'
                         row += '<td>';
-                            if (c.title_sh) row += c.title_sh;
+                            if (c.title_sn) row += c.title_sn;
                                 else row += 'not set';
                         row += '</td>'
                         row += '<td>';
