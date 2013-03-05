@@ -595,7 +595,7 @@ $(document).ready(function() {
             var model = cats.get(id);
             console.debug('id:'+id);
             console.debug(model);
-            //var m= model.toJSON();
+            var m= model.toJSON();//
             //var el ='<div><label>Title</label><input id="title" type="text"'; 
             ///if(m.title)el+='value="'+m.title+'"';
             //el+='/></div><div><label>title(shona)</label><input id="title_sh" type="text" ';
@@ -624,6 +624,7 @@ $(document).ready(function() {
                          'save': {
                              'action': function() {
                                 // console.debug(this);
+                                console.debug(model);
                                 console.debug(m);//fingers crossed 
                              }
                          },
