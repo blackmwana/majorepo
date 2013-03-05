@@ -704,7 +704,7 @@ $(document).ready(function() {
                         row += '</td>'
                         row += '<td>';
                             if (c.count) row += c.count;
-                                else row += 'not set';
+                                else row += 'no set';
                         row += '</td>'
                     row+='</tr>'
                 el.find('tbody').append(row);    
