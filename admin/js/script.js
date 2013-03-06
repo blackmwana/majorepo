@@ -402,6 +402,7 @@ $(document).ready(function() {
                     console.debug('mainview,gocats:cats have been fetched');
                     this.catsView = new CatsView({collection:cats});
                     this.catsView.parent = this;
+                    console.debug(this);
                     majokosiAdminApp.prm.showView(this.catsView);
                 },
                 error:function(){
