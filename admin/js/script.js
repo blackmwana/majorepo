@@ -680,7 +680,7 @@ $(document).ready(function() {
         id:"cat-content",
         className:"page-region-content ",
         events: {
-            "click tr":"showCatEdit"
+            "click tatr":"showCatEdit"
         },
         initialize: function() {
             this.template = _.template($('#item-cats').html());

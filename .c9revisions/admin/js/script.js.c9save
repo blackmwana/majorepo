@@ -2470,3 +2470,4 @@
 {"ts":1362610781011,"patch":[[{"diffs":[[0,"                "],[1,"console.debug()"],[0,"\r\n              "]],"start1":15901,"start2":15901,"length1":32,"length2":47}]],"length":46959,"saved":false}
 {"ts":1362610784391,"patch":[[{"diffs":[[0,"e.debug("],[1,"this"],[0,")\r\n     "]],"start1":15923,"start2":15923,"length1":16,"length2":20}]],"length":46963,"saved":false}
 {"ts":1362610788277,"patch":[[{"diffs":[[0,"ug(this)"],[1,";"],[0,"\r\n      "]],"start1":15928,"start2":15928,"length1":16,"length2":17}]],"length":46964,"saved":false}
+{"ts":1362614254475,"patch":[[{"diffs":[[0," \"click "],[1,"table "],[0,"tr\":\"sho"]],"start1":26699,"start2":26699,"length1":16,"length2":22}]],"length":46970,"saved":false}
